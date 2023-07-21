@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LongGrass : MonoBehaviour, IPlayerTriggerable
 {
-    public void OnPlayerTriggered(PlayerController player)
+    public void OnPlayerTriggered(PlayerController player, Action OnTriggerFinished = null)
     {
         if (UnityEngine.Random.Range(1, 101) <= 10)
         {
@@ -12,4 +13,6 @@ public class LongGrass : MonoBehaviour, IPlayerTriggerable
             GameController.Instance.StartBattle();
         }
     }
+
+    public bool TriggerRepeatedly => true;
 }

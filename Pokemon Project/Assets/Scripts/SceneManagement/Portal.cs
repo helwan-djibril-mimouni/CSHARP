@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,14 @@ public class Portal : MonoBehaviour, IPlayerTriggerable
 
     PlayerController player;
 
-    public void OnPlayerTriggered(PlayerController player)
+    public void OnPlayerTriggered(PlayerController player, Action OnTriggerFinished = null)
     {
         player.Character.Animator.IsMoving = false;
         this.player = player;
         StartCoroutine(SwitchScene());
     }
+
+    public bool TriggerRepeatedly => false;
 
     Fader fader;
 

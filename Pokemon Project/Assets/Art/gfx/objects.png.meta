@@ -357,7 +357,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_12
+      name: book
       rect:
         serializedVersion: 2
         x: 247
@@ -1218,7 +1218,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_53
+      name: firestone
       rect:
         serializedVersion: 2
         x: 196
@@ -3071,7 +3071,7 @@ TextureImporter:
       objects_89: 63050506
       exclamation: -1688784933
       objects_109: 1818174857
-      objects_20: -1064786347
+      objects_128: -1863376800
       objects_3: 1534975748
       objects_119: -736962537
       objects_18: -1920139589
@@ -3090,7 +3090,6 @@ TextureImporter:
       objects_5: 335442086
       objects_137: 1166224678
       objects_82: 1729961209
-      objects_12: 21201885
       objects_65: -659457820
       objects_1: 2080657075
       objects_35: -1475711084
@@ -3119,9 +3118,10 @@ TextureImporter:
       objects_87: -491342921
       objects_104: -1525554137
       objects_107: 909489937
-      objects_7: 488066940
       objects_80: -464687681
+      objects_7: 488066940
       objects_22: -159801083
+      book: 21201885
       objects_47: -476597957
       objects_42: 1260895035
       objects_115: -2011031441
@@ -3141,6 +3141,7 @@ TextureImporter:
       objects_31: -2071467788
       objects_136: 74744526
       objects_90: -1645773391
+      firestone: 189277799
       objects_120: 2087694039
       objects_110: -1316016870
       objects_56: 1263479447
@@ -3164,9 +3165,9 @@ TextureImporter:
       objects_27: 154284694
       objects_100: 133710234
       objects_69: -1636539777
-      objects_53: 189277799
-      objects_76: -307710126
       objects_114: -1608226204
+      objects_76: -307710126
+      objects_130: -367648014
       objects_71: 1629855159
       objects_36: -871438245
       objects_37: -539133000
@@ -3188,13 +3189,12 @@ TextureImporter:
       objects_108: -2067115737
       objects_17: -1903677298
       objects_68: -6230362
-      objects_130: -367648014
       objects_111: 853738980
       objects_61: -104492181
       objects_88: -1681432987
-      objects_4: -1261202890
       objects_127: 2144434660
-      objects_128: -1863376800
+      objects_4: -1261202890
+      objects_20: -1064786347
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

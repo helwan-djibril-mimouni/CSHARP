@@ -29,6 +29,9 @@ public class PokemonBase : ScriptableObject
     [SerializeField] int catchRate = 255;
 
     [SerializeField] List<LearnableMove> learnableMoves;
+    [SerializeField] List<MoveBase> learnableByItems;
+
+    [SerializeField] List<Evolution> evolutions;
 
     public static int MaxNumOfMoves { get; set; } = 4;
 
@@ -127,6 +130,10 @@ public class PokemonBase : ScriptableObject
         get { return learnableMoves; }
     }
 
+    public List<MoveBase> LearnableByItems => learnableByItems;
+
+    public List<Evolution> Evolutions => evolutions;
+
     // same as previous getters
     public int CatchRate => catchRate;
 
@@ -150,6 +157,18 @@ public class LearnableMove
     {
         get { return level; }
     }
+}
+
+[System.Serializable]
+public class Evolution
+{
+    [SerializeField] PokemonBase evolvesInto;
+    [SerializeField] int requiredLevel;
+    [SerializeField] EvolutionItem requiredItem;
+
+    public PokemonBase EvolvesInto => evolvesInto;
+    public int RequiredLevel => requiredLevel;
+    public EvolutionItem RequiredItem => requiredItem;
 }
 
 public enum PokemonType

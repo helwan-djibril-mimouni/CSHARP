@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, ISavable
 {
     [SerializeField] string name;
     [SerializeField] Sprite sprite;
@@ -36,11 +37,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            Interact();
+            StartCoroutine(Interact());
         }
     }
 
-    void Interact()
+    IEnumerator Interact()
     {
         var facingDir = new Vector3(character.Animator.MoveX, character.Animator.MoveY);
         var interactPos = transform.position + facingDir;
@@ -50,24 +51,72 @@ public class PlayerController : MonoBehaviour
         var collider = Physics2D.OverlapCircle(interactPos, 0.3f, GameLayers.Instance.InteractableLayer);
         if (collider != null)
         {
-            collider.GetComponent<Interactable>()?.Interact(transform);
+            yield return collider.GetComponent<Interactable>()?.Interact(transform);
         }
     }
+
+    IPlayerTriggerable currentlyInTrigger;
 
     private void OnMoveOver()
     {
         var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, character.OffsetY), 0.2f, GameLayers.Instance.TriggerableLayers);
 
+        IPlayerTriggerable triggerable = null;
         foreach (var collider in colliders)
         {
-            var triggerable = collider.GetComponent<IPlayerTriggerable>();
+            triggerable = collider.GetComponent<IPlayerTriggerable>();
             if (triggerable != null)
             {
-                character.Animator.IsMoving = false;
-                triggerable.OnPlayerTriggered(this);
+                if (triggerable == currentlyInTrigger && !triggerable.TriggerRepeatedly)
+                {
+                    break;
+                }
+
+                StoryItem storyItem = collider.gameObject.GetComponent<StoryItem>();
+                if (storyItem != null && storyItem.blocksMovement)
+                {
+                    Action onTriggerFinished = () =>
+                    {
+                        StartCoroutine(character.Move(character.PreviousTile, OnMoveOver));
+                    };
+
+                    storyItem.OnPlayerTriggered(this, onTriggerFinished);
+                }
+                else
+                {
+                    triggerable.OnPlayerTriggered(this);
+                }
+                
+                currentlyInTrigger = triggerable;
                 break;
             }
         }
+
+        if (colliders.Count() == 0 || triggerable != currentlyInTrigger)
+        {
+            currentlyInTrigger = null;
+        }
+    }
+
+    public object CaptureState()
+    {
+        var saveData = new PlayerSaveData()
+        {
+            position = new float[] { transform.position.x, transform.position.y },
+            pokemons = GetComponent<PokemonParty>().Pokemons.Select(p => p.GetSaveData()).ToList()
+        };
+
+        return saveData;
+    }
+
+    public void RestoreState(object state)
+    {
+        var saveData = (PlayerSaveData)state;
+
+        var pos = saveData.position;
+        transform.position = new Vector3(pos[0], pos[1]);
+
+        GetComponent<PokemonParty>().Pokemons = saveData.pokemons.Select(s => new Pokemon(s)).ToList();
     }
 
     public string Name
@@ -81,4 +130,11 @@ public class PlayerController : MonoBehaviour
     }
 
     public Character Character => character;
+}
+
+[System.Serializable]
+public class PlayerSaveData
+{
+    public float[] position;
+    public List<PokemonSaveData> pokemons;
 }

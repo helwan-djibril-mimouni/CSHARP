@@ -16,6 +16,10 @@ GameObject:
   - component: {fileID: 1165709834834521968}
   - component: {fileID: 1165709834834521974}
   - component: {fileID: 1165709834834521969}
+  - component: {fileID: 8376834322413700384}
+  - component: {fileID: 3502243888464599695}
+  - component: {fileID: 5322779351191377363}
+  - component: {fileID: 2676097337944308681}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -119,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokemons:
   - pokemonBase: {fileID: 11400000, guid: a501eb37c033ce6478eaa7ea11635fe2, type: 2}
-    level: 13
+    level: 15
   - pokemonBase: {fileID: 11400000, guid: 5755a6f6c4c292a4483f9afcb4bd746a, type: 2}
     level: 17
   - pokemonBase: {fileID: 11400000, guid: e9d55e3f0e1b3e24f9e1ad51d55716a1, type: 2}
@@ -128,6 +132,8 @@ MonoBehaviour:
     level: 18
   - pokemonBase: {fileID: 11400000, guid: b9c2a2b5dadfac74fb785e89db41b441, type: 2}
     level: 15
+  - pokemonBase: {fileID: 11400000, guid: 3486749e55d354d4082f22111711c3b1, type: 2}
+    level: 13
 --- !u!114 &1165709834834521971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,6 +227,95 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9218023, y: 1.3118614}
   m_EdgeRadius: 0
+--- !u!114 &8376834322413700384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165709834834521979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4881f89f8b930e34489bbb86116ccd4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueId: 
+--- !u!114 &3502243888464599695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165709834834521979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc438754c94a77544807b1bba44774f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots:
+  - item: {fileID: 11400000, guid: 593b3a0749f3b55448130da1c1c51a81, type: 2}
+    count: 7
+  - item: {fileID: 11400000, guid: be62aae20e924bc40abdd8252767d077, type: 2}
+    count: 10
+  - item: {fileID: 11400000, guid: 7147390e1aac2314aaec33630850d3d0, type: 2}
+    count: 5
+  - item: {fileID: 11400000, guid: 20dbaa1d089210d4f93104973c84040b, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 066b09409e88a3f48bace972b75fe50b, type: 2}
+    count: 5
+  - item: {fileID: 11400000, guid: 73602be5a3270a844b45b135678531d3, type: 2}
+    count: 6
+  - item: {fileID: 11400000, guid: cab11afa85aae0e4a964d064bf05e6e6, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: e8e372c71d8fd134283432f1acba0514, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: b92b828d905ef5e4e81e1b586793009f, type: 2}
+    count: 4
+  - item: {fileID: 11400000, guid: 8b13e4ce5454813469e1af5c58ed379e, type: 2}
+    count: 2
+  - item: {fileID: 11400000, guid: 4cc26650eea749d419622f9fc137c8fa, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: e1b6f335a2be29c46a6e870be8d13382, type: 2}
+    count: 12
+  - item: {fileID: 11400000, guid: f4bc5357cbf091d43b0e383ffc0da1a3, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: e6cf42db9a591fb4993c6d168242112f, type: 2}
+    count: 1
+  pokeballSlots:
+  - item: {fileID: 11400000, guid: 61920333723bed446bbe3d485456572c, type: 2}
+    count: 23
+  - item: {fileID: 11400000, guid: 8a785da4c654b5f4b94bab54ea22e8f6, type: 2}
+    count: 11
+  tmSlots:
+  - item: {fileID: 11400000, guid: 06bb8a653645bc64ba01f1d15afeb542, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: ac335ad58c120e14a85a85cd83df0833, type: 2}
+    count: 1
+--- !u!114 &5322779351191377363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165709834834521979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b18ca2d44b73c46bd118039824018f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2676097337944308681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165709834834521979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da9e2715f39d0cd4aa864dba1b84933b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 1000
 --- !u!1 &1165709834981909910
 GameObject:
   m_ObjectHideFlags: 0

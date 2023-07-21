@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdd6dc8d697c4142a75d28b6cab876a, type: 3}
+  m_Name: 0059-Arcanine
+  m_EditorClassIdentifier: 
+  name: Arcanine
+  description: 
+  frontSprite: {fileID: 21300000, guid: fb48b037b751fe945847d4b95104d03f, type: 3}
+  backSprite: {fileID: 21300000, guid: ac873a61b80f3e240bdc22ec078dd4d2, type: 3}
+  type1: 2
+  type2: 0
+  maxHP: 90
+  attack: 110
+  defense: 80
+  spAttack: 100
+  spDefense: 80
+  speed: 95
+  expYield: 213
+  growthRate: 4
+  catchRate: 75
+  learnableMoves: []
+  learnableByItems: []
+  evolutions: []

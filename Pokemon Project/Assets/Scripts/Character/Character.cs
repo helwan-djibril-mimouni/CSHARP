@@ -11,6 +11,8 @@ public class Character : MonoBehaviour
 
     public float OffsetY { get; private set; } = 0.3f;
 
+    public Vector2 PreviousTile { get; private set; }
+
     CharacterAnimator animator;
 
     private void Awake()
@@ -29,6 +31,8 @@ public class Character : MonoBehaviour
 
     public IEnumerator Move(Vector2 moveVec, Action OnMoveOver=null)
     {
+        PreviousTile = moveVec * new Vector2(-1, -1);
+
         animator.MoveX = Mathf.Clamp(moveVec.x, -1f, 1f);
         animator.MoveY = Mathf.Clamp(moveVec.y, -1f, 1f);
 
