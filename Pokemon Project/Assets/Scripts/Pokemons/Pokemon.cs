@@ -265,32 +265,58 @@ public class Pokemon
 
     public DamageDetails TakeDamage(Move move, Pokemon attacker)
     {
-        float critical = 1;
-        if (Random.value * 100f <= 6.25)
+        float critical = 1f;
+        if (!(move.Base.CriticalBehavior == CritBehavior.NeverCrits))
         {
-            critical = 2f;
+            if (move.Base.CriticalBehavior == CritBehavior.AlwaysCrits)
+            {
+                critical = 1.5f;
+            }
+            else
+            {
+                int critChance = 0 + ((move.Base.CriticalBehavior == CritBehavior.HighCritRatio) ? 1 : 0);
+                float[] chances = new float[] { 6.25f, 12.5f, 50f, 100f };
+                if (Random.value * 100f <= chances[Mathf.Clamp(critChance, 0, 3)])
+                {
+                    critical = 1.5f;
+                }
+            }
         }
         
+        bool stabCondition = move.Base.Type == this.Base.Type1 || move.Base.Type == this.Base.Type2;
+        float stab = (stabCondition) ? 1.5f : 1f;
         float type = TypeChart.GetEffectiveness(move.Base.Type, this.Base.Type1) * TypeChart.GetEffectiveness(move.Base.Type, this.Base.Type2);
 
         var damageDetails = new DamageDetails()
         {
             TypeEffectiveness = type,
             Critical = critical,
-            Fainted = false
+            Fainted = false,
+            DamageDealt = 0
         };
 
         float attack = (move.Base.Category == MoveCategory.Special) ? attacker.SpAttack : attacker.Attack;
         float defense = (move.Base.Category == MoveCategory.Special) ? attacker.SpDefense : attacker.Defense;
 
-        float modifiers = Random.Range(0.85f, 1f) * type * critical;
+        float modifiers = Random.Range(0.85f, 1f) * type * critical * stab;
         float a = (2 * attacker.Level + 10) / 250f;
         float d = a * move.Base.Power * ((float)attack / defense) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
 
         DecreaseHP(damage);
+        damageDetails.DamageDealt = damage;
 
         return damageDetails;
+    }
+
+    public void TakeRecoilDamage(int damage)
+    {
+        if (damage < 1)
+        {
+            damage = 1;
+        }
+        DecreaseHP(damage);
+        StatusChanges.Enqueue($"{Base.Name} was damaged by the recoil !");
     }
 
     public void IncreaseHP(int amount)
@@ -389,6 +415,7 @@ public class DamageDetails
     public bool Fainted { get; set; }
     public float Critical { get; set; }
     public float TypeEffectiveness { get; set; }
+    public int DamageDealt { get; set; }
 }
 
 [System.Serializable]

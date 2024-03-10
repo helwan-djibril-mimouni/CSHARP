@@ -19,6 +19,8 @@ MonoBehaviour:
   accuracy: 100
   alwaysHits: 0
   pp: 25
+  priority: 0
+  critBehavior: 0
   category: 1
   effects:
     boosts: []
@@ -31,3 +33,7 @@ MonoBehaviour:
     chance: 10
     target: 0
   target: 0
+  recoil:
+    recoilType: 0
+    recoilDamage: 0
+  sound: {fileID: 8300000, guid: 04612459f0f17ce4c8cda4fb04a3d8c4, type: 3}

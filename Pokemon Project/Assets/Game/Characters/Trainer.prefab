@@ -233,6 +233,7 @@ MonoBehaviour:
     - I will train harder and beat you one day !
   exclamation: {fileID: 7269622471872750394}
   fov: {fileID: 7269622470946641276}
+  trainerAppearsClip: {fileID: 8300000, guid: b5a571e9a4f3e6b4386350493457808e, type: 3}
 --- !u!114 &7269622471690719688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +279,7 @@ MonoBehaviour:
   - {fileID: -2118298782, guid: 3047f76e9abe38d4b82f45e10f25abf2, type: 3}
   - {fileID: -1197894297, guid: 3047f76e9abe38d4b82f45e10f25abf2, type: 3}
   - {fileID: 1573635460, guid: 3047f76e9abe38d4b82f45e10f25abf2, type: 3}
+  surfSprites: []
   defaultDirection: 1
 --- !u!114 &7269622471690719683
 MonoBehaviour:
@@ -381,7 +383,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -774582895
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1688784933, guid: 3ae12697ae504414bbf0797ea36dfddd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

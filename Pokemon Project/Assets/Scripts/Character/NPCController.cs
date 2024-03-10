@@ -5,6 +5,7 @@ using UnityEngine;
 public class NPCController : MonoBehaviour, Interactable, ISavable
 {
     [SerializeField] Dialog dialog;
+    [SerializeField] GameObject exclamation;
 
     [Header("Quests")]
     [SerializeField] QuestBase questToStart;
@@ -115,6 +116,13 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             }
         }
         character.HandleUpdate();
+    }
+
+    public IEnumerator Exclamation()
+    {
+        exclamation.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        exclamation.SetActive(false);
     }
 
     IEnumerator Walk()

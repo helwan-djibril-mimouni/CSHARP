@@ -20,6 +20,7 @@ MonoBehaviour:
   alwaysHits: 0
   pp: 10
   priority: 0
+  critBehavior: 0
   category: 0
   effects:
     boosts: []
@@ -27,3 +28,7 @@ MonoBehaviour:
     volatileStatus: 0
   secondaryEffects: []
   target: 0
+  recoil:
+    recoilType: 0
+    recoilDamage: 0
+  sound: {fileID: 8300000, guid: 304c74f311b131243b10a3a8d6ccd130, type: 3}

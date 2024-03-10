@@ -16,10 +16,13 @@ public class MoveBase : ScriptableObject
     [SerializeField] bool alwaysHits;
     [SerializeField] int pp;
     [SerializeField] int priority;
+    [SerializeField] CritBehavior critBehavior;
     [SerializeField] MoveCategory category;
     [SerializeField] MoveEffects effects;
     [SerializeField] List<SecondaryEffects> secondaryEffects;
     [SerializeField] MoveTarget target;
+    [SerializeField] RecoilMoveEffect recoil;
+    [SerializeField] AudioClip sound;
 
     public string Name
     {
@@ -61,6 +64,11 @@ public class MoveBase : ScriptableObject
         get { return priority; }
     }
 
+    public CritBehavior CriticalBehavior
+    {
+        get { return critBehavior; }
+    }
+
     public MoveCategory Category
     {
         get { return category; }
@@ -80,6 +88,13 @@ public class MoveBase : ScriptableObject
     {
         get { return target; }
     }
+
+    public RecoilMoveEffect Recoil
+    {
+        get { return recoil; }
+    }
+
+    public AudioClip Sound => sound;
 }
 
 [System.Serializable]
@@ -137,4 +152,21 @@ public enum MoveCategory
 public enum MoveTarget
 {
     Foe, Self
+}
+
+[System.Serializable]
+public class RecoilMoveEffect
+{
+    public RecoilType recoilType;
+    public float recoilDamage;
+}
+
+public enum RecoilType
+{
+    None, RecoilByMaxHP, RecoilByCurrentHP, RecoilByDamage
+}
+
+public enum CritBehavior
+{
+    None, HighCritRatio, AlwaysCrits, NeverCrits
 }

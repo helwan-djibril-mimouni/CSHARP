@@ -50,14 +50,19 @@ public class PokemonParty : MonoBehaviour
         }
     }
 
-    public IEnumerator CheckForEvolution()
+    public bool CheckForEvolutions()
+    {
+        return pokemons.Any(p => p.CheckForEvolution() != null);
+    }
+
+    public IEnumerator RunEvolutions()
     {
         foreach (var pokemon in pokemons)
         {
             var evolution = pokemon.CheckForEvolution();
             if (evolution != null)
             {
-                yield return EvolutionManager.i.Evolve(pokemon, evolution);
+                yield return EvolutionState.i.Evolve(pokemon, evolution);
             }
         }
     }

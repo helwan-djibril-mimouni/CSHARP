@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Merchant : MonoBehaviour
 {
+    [SerializeField] List<ItemBase> availableItems;
+
     public IEnumerator Trade()
     {
-        yield return ShopController.i.StartTrading(this);
+        ShopMenuState.i.AvailableItems = availableItems;
+        yield return GameController.Instance.StateMachine.PushAndWait(ShopMenuState.i);
     }
+
+    public List<ItemBase> AvailableItems => availableItems;
 }

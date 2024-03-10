@@ -11,10 +11,13 @@ public class PlayerController : MonoBehaviour, ISavable
 
     private Vector2 input;
 
+    public static PlayerController i { get; set; }
+
     private Character character;
 
     private void Awake()
     {
+        i = this;
         character = GetComponent<Character>();
     }
 
@@ -48,7 +51,7 @@ public class PlayerController : MonoBehaviour, ISavable
 
         // Debug.DrawLine(transform.position, interactPos, Color.green, 0.5f);
 
-        var collider = Physics2D.OverlapCircle(interactPos, 0.3f, GameLayers.Instance.InteractableLayer);
+        var collider = Physics2D.OverlapCircle(interactPos, 0.3f, GameLayers.Instance.InteractableLayer | GameLayers.Instance.WaterLayer);
         if (collider != null)
         {
             yield return collider.GetComponent<Interactable>()?.Interact(transform);

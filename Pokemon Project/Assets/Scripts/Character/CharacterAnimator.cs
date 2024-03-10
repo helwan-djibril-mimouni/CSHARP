@@ -8,11 +8,14 @@ public class CharacterAnimator : MonoBehaviour
     [SerializeField] List<Sprite> walkUpSprites;
     [SerializeField] List<Sprite> walkRightSprites;
     [SerializeField] List<Sprite> walkLeftSprites;
+    [SerializeField] List<Sprite> surfSprites;
     [SerializeField] FacingDirection defaultDirection = FacingDirection.Down;
 
     public float MoveX { get; set; }
     public float MoveY { get; set; }
     public bool IsMoving { get; set; }
+    public bool IsJumping { get; set; }
+    public bool IsSurfing { get; set; }
 
     SpriteAnimator walkDownAnim;
     SpriteAnimator walkUpAnim;
@@ -40,42 +43,71 @@ public class CharacterAnimator : MonoBehaviour
     {
         var prevAnim = currentAnim;
 
-        if (MoveX == 1)
+        if (!IsSurfing)
         {
-            currentAnim = walkRightAnim;
-        }
-        else if (MoveX == -1)
-        {
-            currentAnim = walkLeftAnim;
-        }
-        else if (MoveY == 1)
-        {
-            currentAnim = walkUpAnim;
-        }
-        else if (MoveY == -1)
-        {
-            currentAnim = walkDownAnim;
-        }
+            if (MoveX == 1)
+            {
+                currentAnim = walkRightAnim;
+            }
+            else if (MoveX == -1)
+            {
+                currentAnim = walkLeftAnim;
+            }
+            else if (MoveY == 1)
+            {
+                currentAnim = walkUpAnim;
+            }
+            else if (MoveY == -1)
+            {
+                currentAnim = walkDownAnim;
+            }
 
-        if (currentAnim != prevAnim || IsMoving != wasPreviouslyMoving)
-        {
-            currentAnim.Start();
-        }
+            if (currentAnim != prevAnim || IsMoving != wasPreviouslyMoving)
+            {
+                currentAnim.Start();
+            }
 
-        if (IsMoving)
-        {
-            currentAnim.HandleUpdate();
+            if (IsJumping)
+            {
+                spriteRenderer.sprite = currentAnim.Frames[currentAnim.Frames.Count - 1];
+            }
+            else if (IsMoving)
+            {
+                currentAnim.HandleUpdate();
+            }
+            else
+            {
+                spriteRenderer.sprite = currentAnim.Frames[0];
+            }
         }
         else
         {
-            spriteRenderer.sprite = currentAnim.Frames[0];
-        }
+            if (MoveX == 1)
+            {
+                spriteRenderer.sprite = surfSprites[2];
+            }
+            else if (MoveX == -1)
+            {
+                spriteRenderer.sprite = surfSprites[3];
+            }
+            else if (MoveY == 1)
+            {
+                spriteRenderer.sprite = surfSprites[1];
+            }
+            else if (MoveY == -1)
+            {
+                spriteRenderer.sprite = surfSprites[0];
+            }
+        }        
 
         wasPreviouslyMoving = IsMoving;
     }
 
     public void SetFacingDirection(FacingDirection dir)
     {
+        MoveX = 0;
+        MoveY = 0;
+
         if (dir == FacingDirection.Right)
         {
             MoveX = 1;

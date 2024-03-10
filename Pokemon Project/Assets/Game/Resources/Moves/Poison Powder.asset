@@ -17,9 +17,18 @@ MonoBehaviour:
   type: 8
   power: 0
   accuracy: 100
+  alwaysHits: 0
   pp: 20
+  priority: 0
+  critBehavior: 0
   category: 2
   effects:
     boosts: []
     status: 1
+    volatileStatus: 0
+  secondaryEffects: []
   target: 0
+  recoil:
+    recoilType: 0
+    recoilDamage: 0
+  sound: {fileID: 8300000, guid: 32d17970672fd694080c1888ee35e200, type: 3}

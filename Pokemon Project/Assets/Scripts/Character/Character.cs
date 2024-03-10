@@ -29,7 +29,7 @@ public class Character : MonoBehaviour
         transform.position = pos;
     }
 
-    public IEnumerator Move(Vector2 moveVec, Action OnMoveOver=null)
+    public IEnumerator Move(Vector2 moveVec, Action OnMoveOver=null, bool checkCollisions=true)
     {
         PreviousTile = moveVec * new Vector2(-1, -1);
 
@@ -40,9 +40,23 @@ public class Character : MonoBehaviour
         targetPos.x += moveVec.x;
         targetPos.y += moveVec.y;
 
-        if (!IsPathClear(targetPos))
+        var ledge = CheckForLedge(targetPos);
+        if (ledge != null)
+        {
+            if (ledge.TryToJump(this, moveVec))
+            {
+                yield break;
+            }
+        }
+
+        if (checkCollisions && !IsPathClear(targetPos))
         {
             yield break;
+        }
+
+        if (animator.IsSurfing && Physics2D.OverlapCircle(targetPos, 0.3f, GameLayers.Instance.WaterLayer) == null)
+        {
+            animator.IsSurfing = false;
         }
 
         IsMoving = true;
@@ -69,7 +83,13 @@ public class Character : MonoBehaviour
         var diff = targetPos - transform.position;
         var dir = diff.normalized;
 
-        if (Physics2D.BoxCast(transform.position + dir, new Vector2(0.2f, 0.2f), 0f, dir, diff.magnitude - 1, GameLayers.Instance.SolidLayer | GameLayers.Instance.InteractableLayer | GameLayers.Instance.PlayerLayer) == true)
+        var collisionLayers = GameLayers.Instance.SolidLayer | GameLayers.Instance.InteractableLayer | GameLayers.Instance.PlayerLayer;
+        if (!animator.IsSurfing)
+        {
+            collisionLayers = collisionLayers | GameLayers.Instance.WaterLayer;
+        }
+
+        if (Physics2D.BoxCast(transform.position + dir, new Vector2(0.2f, 0.2f), 0f, dir, diff.magnitude - 1, collisionLayers) == true)
         {
             return false;
         }
@@ -84,6 +104,12 @@ public class Character : MonoBehaviour
             return false;
         }
         return true;
+    }
+
+    Ledge CheckForLedge(Vector3 targetPos)
+    {
+        var collider = Physics2D.OverlapCircle(targetPos, 0.15f, GameLayers.Instance.LedgeLayer);
+        return collider?.GetComponent<Ledge>();
     }
 
     public void LookTowards(Vector3 targetPos)

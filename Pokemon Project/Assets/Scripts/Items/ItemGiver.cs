@@ -18,6 +18,8 @@ public class ItemGiver : MonoBehaviour, ISavable
 
         used = true;
 
+        AudioManager.i.PlaySFX(AudioID.ItemObtained, pauseMusic: true);
+
         string dialogText = $"You received {item.Name}";
         if (count > 1)
         {

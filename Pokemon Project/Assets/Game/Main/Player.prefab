@@ -128,8 +128,6 @@ MonoBehaviour:
     level: 17
   - pokemonBase: {fileID: 11400000, guid: e9d55e3f0e1b3e24f9e1ad51d55716a1, type: 2}
     level: 14
-  - pokemonBase: {fileID: 11400000, guid: dfe519bc72fb3c344ab697f501a1c0e9, type: 2}
-    level: 18
   - pokemonBase: {fileID: 11400000, guid: b9c2a2b5dadfac74fb785e89db41b441, type: 2}
     level: 15
   - pokemonBase: {fileID: 11400000, guid: 3486749e55d354d4082f22111711c3b1, type: 2}
@@ -166,6 +164,11 @@ MonoBehaviour:
   - {fileID: 2690600881683387669, guid: 3111f23cd57d2be48b2ee6bac4a23588, type: 3}
   - {fileID: 6634202828824015816, guid: 3111f23cd57d2be48b2ee6bac4a23588, type: 3}
   - {fileID: -5008138227279614530, guid: 3111f23cd57d2be48b2ee6bac4a23588, type: 3}
+  surfSprites:
+  - {fileID: -4465137455631916842, guid: 14ced2238d82c7149b8f5a0481222249, type: 3}
+  - {fileID: 548946438817077065, guid: 14ced2238d82c7149b8f5a0481222249, type: 3}
+  - {fileID: 4472088847651303106, guid: 14ced2238d82c7149b8f5a0481222249, type: 3}
+  - {fileID: 6356773947664160301, guid: 14ced2238d82c7149b8f5a0481222249, type: 3}
   defaultDirection: 1
 --- !u!114 &1165709834834521968
 MonoBehaviour:
@@ -288,8 +291,6 @@ MonoBehaviour:
     count: 11
   tmSlots:
   - item: {fileID: 11400000, guid: 06bb8a653645bc64ba01f1d15afeb542, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: ac335ad58c120e14a85a85cd83df0833, type: 2}
     count: 1
 --- !u!114 &5322779351191377363
 MonoBehaviour:
