@@ -137,7 +137,7 @@ public class GameController : MonoBehaviour
             StartCoroutine(Fader.i.FadeOut(0.5f));
         }
     }
-
+    
     private void OnGUI()
     {
         var style = new GUIStyle();
@@ -154,5 +154,5 @@ public class GameController : MonoBehaviour
     public Camera WorldCamera => worldCamera;
 
     public PartyScreen PartyScreen => partyScreen;
-    public QuestUI QuestUI => questUI;
+    public QuestUI QustUI => questUI;
 }

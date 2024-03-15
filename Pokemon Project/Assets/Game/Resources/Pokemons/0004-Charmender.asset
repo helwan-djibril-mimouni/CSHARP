@@ -45,6 +45,3 @@ MonoBehaviour:
   - evolvesInto: {fileID: 11400000, guid: da21fb46d744b154f81c404b66b8bbe2, type: 2}
     requiredLevel: 16
     requiredItem: {fileID: 0}
-  - evolvesInto: {fileID: 11400000, guid: da21fb46d744b154f81c404b66b8bbe2, type: 2}
-    requiredLevel: 0
-    requiredItem: {fileID: 11400000, guid: e6cf42db9a591fb4993c6d168242112f, type: 2}

@@ -214,7 +214,7 @@ public class Pokemon
 
     public Evolution CheckForEvolution()
     {
-        return Base.Evolutions.FirstOrDefault(e => e.RequiredLevel <= level);
+        return Base.Evolutions.FirstOrDefault(e => e.RequiredLevel <= level && e.RequiredItem == null);
     }
 
     public Evolution CheckForEvolution(ItemBase item)

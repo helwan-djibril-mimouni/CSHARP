@@ -1,12 +1,14 @@
+using GDE.GenericSelectionUI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public enum QuestUIState { QuestSelection, Busy }
 
-public class QuestUI : MonoBehaviour
+public class QuestUI : SelectionUI<TextSlot>
 {
     [SerializeField] GameObject questList;
     [SerializeField] QuestSlotUI questSlotUI;
@@ -57,13 +59,12 @@ public class QuestUI : MonoBehaviour
             slotUiList.Add(slotUIObj);
         }
 
-        /*
+        
         foreach (Transform child in questList.transform)
         {
             var quest = child.GetComponent<QuestSlotUI>();
-            quest.SetData(QuestList.GetQuestList().Quests[0]);
+            //quest.SetData(QuestList.GetQuestList().Quests[0]);
         }
-        */
 
         UpdateQuestSelection();
     }

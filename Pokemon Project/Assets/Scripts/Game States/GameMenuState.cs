@@ -64,6 +64,7 @@ public class GameMenuState : State<GameController>
             };
 
             questUI.HandleUpdate(onBack);*/
+            gc.StateMachine.Push(QuestState.i);
         }
     }
 
