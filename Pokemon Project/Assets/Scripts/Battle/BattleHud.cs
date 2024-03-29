@@ -72,7 +72,7 @@ public class BattleHud : MonoBehaviour
     {
         if (expBar == null) return;
 
-        float normalizedExp = GetNormalizedExp();
+        float normalizedExp = pkmn.GetNormalizedExp();
         expBar.transform.localScale = new Vector3(normalizedExp, 1, 1);
     }
 
@@ -85,17 +85,8 @@ public class BattleHud : MonoBehaviour
             expBar.transform.localScale = new Vector3(0, 1, 1);
         }
 
-        float normalizedExp = GetNormalizedExp();
+        float normalizedExp = pkmn.GetNormalizedExp();
         yield return expBar.transform.DOScaleX(normalizedExp, 1.5f).WaitForCompletion();
-    }
-
-    float GetNormalizedExp()
-    {
-        int currentLevelExp = pkmn.Base.GetExpForLevel(pkmn.Level);
-        int nextLevelExp = pkmn.Base.GetExpForLevel(pkmn.Level + 1);
-
-        float normalizedExp = (float) (pkmn.Exp - currentLevelExp) / (nextLevelExp - currentLevelExp);
-        return Mathf.Clamp01(normalizedExp);
     }
 
     public void UpdateHP()

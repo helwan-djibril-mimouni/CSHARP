@@ -38,7 +38,7 @@ namespace GDE.GenericSelectionUI
 
         public void ClearItems()
         {
-            items.ForEach(i => i.Clear());
+            items?.ForEach(i => i.Clear());
 
             this.items = null;
         }
@@ -77,7 +77,7 @@ namespace GDE.GenericSelectionUI
 
         void HandleListSelection()
         {
-            float v = Input.GetAxis("Vertical");
+            float v = Input.GetAxisRaw("Vertical");
 
             if (selectionTimer == 0 && Mathf.Abs(v) > 0.2f)
             {
@@ -89,8 +89,8 @@ namespace GDE.GenericSelectionUI
 
         void HandleGridSelection()
         {
-            float v = Input.GetAxis("Vertical");
-            float h = Input.GetAxis("Horizontal");
+            float v = Input.GetAxisRaw("Vertical");
+            float h = Input.GetAxisRaw("Horizontal");
 
             if (selectionTimer == 0 && (Mathf.Abs(v) > 0.2f || Mathf.Abs(h) > 0.2f))
             {

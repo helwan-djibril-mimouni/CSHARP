@@ -142,12 +142,12 @@ public class GameController : MonoBehaviour
     {
         var style = new GUIStyle();
         style.fontSize = 24;
-
+        /*
         GUILayout.Label("STATE STACK", style);
         foreach (var state in StateMachine.StateStack)
         {
             GUILayout.Label(state.GetType().ToString(), style);
-        }
+        }*/
     }
 
     public PlayerController PlayerController => playerController;

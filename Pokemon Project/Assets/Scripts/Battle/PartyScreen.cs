@@ -31,6 +31,8 @@ public class PartyScreen : SelectionUI<TextSlot>
     {
         pokemons = party.Pokemons;
 
+        ClearItems();
+
         for (int i = 0; i < memberSlots.Length; i++)
         {
             if (i < pokemons.Count)
