@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Ivysaur
   description: 
-  frontSprite: {fileID: 21300000, guid: b396dda6f070e4546b27d0ae48754a39, type: 3}
-  backSprite: {fileID: 21300000, guid: bd4eaa8167cc49741b8f60b12ff80ffa, type: 3}
-  type1: 0
-  type2: 0
+  frontSprite: {fileID: 21300000, guid: 1dfa344beb8969a43b9a29c4a24f5636, type: 3}
+  backSprite: {fileID: 21300000, guid: a735e4a716183754795bb66e6b94e016, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: 463db410cfdc6534296e1ac832b89b30, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 3e07086e843af7749b695486e166ff58, type: 3}
+  type1: 4
+  type2: 8
   maxHP: 60
   attack: 62
   defense: 63
@@ -42,3 +44,4 @@ MonoBehaviour:
     level: 20
   learnableByItems:
   - {fileID: 11400000, guid: bbf788516f17c904c8d06f454049613e, type: 2}
+  evolutions: []

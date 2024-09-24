@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Squirtle
   description: 
-  frontSprite: {fileID: 21300000, guid: b8a9d7ddd2d69154ea4f7d27f6857e23, type: 3}
-  backSprite: {fileID: 21300000, guid: 3d31499ec15b0af449a76e36413250d5, type: 3}
+  frontSprite: {fileID: 21300000, guid: 720ae9f406ee15c49b37a037cb013cde, type: 3}
+  backSprite: {fileID: 21300000, guid: b91867d920182914faf8b6da187dd8c2, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: bc82ce2fef49f534180fc9916a20c9c0, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 58d4d1b75d6c8a44497c4f506163a0e6, type: 3}
   type1: 3
   type2: 0
   maxHP: 44
@@ -24,7 +26,7 @@ MonoBehaviour:
   spAttack: 50
   spDefense: 64
   speed: 43
-  expYield: 63
+  expYield: 630
   growthRate: 3
   catchRate: 45
   learnableMoves:

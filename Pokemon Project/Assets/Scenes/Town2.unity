@@ -3572,7 +3572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344967535}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27, y: 18, z: 0}
+  m_LocalPosition: {x: -27, y: 19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3637,7 +3637,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fe57853ea4cc21942a2bc8ddd5f0e912, type: 2}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8601,6 +8601,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons: []
+  wildPokemonsInWater: []
+  totalChance: 0
+  totalChanceWater: 0
 --- !u!1 &1576603727
 GameObject:
   m_ObjectHideFlags: 0
@@ -8907,6 +8910,7 @@ MonoBehaviour:
     lines:
     - Hi, have you tried walking through the long grass
     - You can find lots of cool pokemons in there
+  exclamation: {fileID: 0}
   questToStart: {fileID: 0}
   questToComplete: {fileID: 0}
   movementPatterns:
@@ -8947,6 +8951,7 @@ MonoBehaviour:
   - {fileID: -2118298782, guid: 3047f76e9abe38d4b82f45e10f25abf2, type: 3}
   - {fileID: -1197894297, guid: 3047f76e9abe38d4b82f45e10f25abf2, type: 3}
   - {fileID: 1573635460, guid: 3047f76e9abe38d4b82f45e10f25abf2, type: 3}
+  surfSprites: []
   defaultDirection: 1
 --- !u!114 &1610310924
 MonoBehaviour:

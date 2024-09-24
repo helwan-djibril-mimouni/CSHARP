@@ -37,11 +37,25 @@ public class BattleUnit : MonoBehaviour
         Pokemon = pokemon;
         if (isPlayerUnit)
         {
-            image.sprite = Pokemon.Base.BackSprite;
+            if (pokemon.Shiny)
+            {
+                image.sprite = Pokemon.Base.ShinyBackSprite;
+            }
+            else
+            {
+                image.sprite = Pokemon.Base.BackSprite;
+            }
         }
         else
         {
-            image.sprite = Pokemon.Base.FrontSprite;
+            if (pokemon.Shiny)
+            {
+                image.sprite = Pokemon.Base.ShinyFrontSprite;
+            }
+            else
+            {
+                image.sprite = Pokemon.Base.FrontSprite;
+            }
         }
 
         hud.gameObject.SetActive(true);

@@ -50,7 +50,13 @@ public class MapArea : MonoBehaviour
         var levelRange = pokemonRecord.levelRange;
         int level = levelRange.y == 0 ? levelRange.x : Random.Range(levelRange.x, levelRange.y + 1);
 
-        var wildPokemon = new Pokemon(pokemonRecord.pokemon, level);
+        bool shiny = false;
+        if (randVal < 50)
+        {
+            shiny = true;
+        }
+
+        var wildPokemon = new Pokemon(pokemonRecord.pokemon, level, shiny);
         wildPokemon.Init();
         return wildPokemon;        
     }

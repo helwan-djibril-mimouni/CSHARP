@@ -11,6 +11,7 @@ public class BattleHud : MonoBehaviour
     [SerializeField] Text statusText;
     [SerializeField] HPBar hpBar;
     [SerializeField] GameObject expBar;
+    [SerializeField] Image shinyImage;
 
     [SerializeField] Color psnColor;
     [SerializeField] Color brnColor;
@@ -35,6 +36,7 @@ public class BattleHud : MonoBehaviour
         SetLevel();
         hpBar.SetHP((float) pokemon.HP / pokemon.MaxHP);
         SetExp();
+        SetShiny();
 
         statusColors = new Dictionary<ConditionID, Color>()
         {
@@ -74,6 +76,11 @@ public class BattleHud : MonoBehaviour
 
         float normalizedExp = pkmn.GetNormalizedExp();
         expBar.transform.localScale = new Vector3(normalizedExp, 1, 1);
+    }
+
+    public void SetShiny()
+    {
+        shinyImage.gameObject.SetActive(pkmn.Shiny);
     }
 
     public IEnumerator SetExpSmooth(bool reset=false)

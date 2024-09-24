@@ -8,11 +8,13 @@ public class Pokemon
 {
     [SerializeField] PokemonBase pokemonBase;
     [SerializeField] int level;
+    [SerializeField] bool shiny;
 
-    public Pokemon(PokemonBase pBase, int pLevel)
+    public Pokemon(PokemonBase pBase, int pLevel, bool pshiny)
     {
         pokemonBase = pBase;
         level = pLevel;
+        shiny = pshiny;
 
         Init();
     }
@@ -25,6 +27,11 @@ public class Pokemon
     public int Level
     {
         get { return level; }
+    }
+
+    public bool Shiny
+    {
+        get { return shiny; }
     }
 
     public int Exp { get; set; }

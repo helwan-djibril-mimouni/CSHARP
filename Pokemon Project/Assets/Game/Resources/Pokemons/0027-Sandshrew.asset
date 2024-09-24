@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sandshrew
   description: 
-  frontSprite: {fileID: 21300000, guid: aee7dcf6b44e72b4fb671e78a4c87c5b, type: 3}
-  backSprite: {fileID: 21300000, guid: 8412ec7eddd43564494fa7eb7f0ecd8e, type: 3}
+  frontSprite: {fileID: 21300000, guid: d32a97d7705af5c42b28c111087d4752, type: 3}
+  backSprite: {fileID: 21300000, guid: 11af5b2e47656de4cbaffa816f5fd64b, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: 325bccde6f23d0844bb0302095be83cc, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 7beb677b07b1dc14ab0a39b5e0cfd38e, type: 3}
   type1: 9
   type2: 0
   maxHP: 50
@@ -39,3 +41,4 @@ MonoBehaviour:
   learnableByItems:
   - {fileID: 11400000, guid: bbf788516f17c904c8d06f454049613e, type: 2}
   - {fileID: 11400000, guid: cf97331624011af42a8b5b3b437ed70e, type: 2}
+  evolutions: []

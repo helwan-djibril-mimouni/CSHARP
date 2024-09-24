@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Growlithe
   description: 
-  frontSprite: {fileID: 21300000, guid: a60b9736872babb41b625f831f9b4b2f, type: 3}
-  backSprite: {fileID: 21300000, guid: 7709d51e4e201564b81e5df4e30014c5, type: 3}
+  frontSprite: {fileID: 21300000, guid: 7fbddaa8ea6a35a46821ab0ca79a3cd6, type: 3}
+  backSprite: {fileID: 21300000, guid: e07369060e25eac46836f077fcc9612d, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: 5626478a2e739604599492f266dc2e8d, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 7790aa644c478e34baf5a4506b3d1a50, type: 3}
   type1: 2
   type2: 0
   maxHP: 55

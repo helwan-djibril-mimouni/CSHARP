@@ -332,7 +332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8244693556899119642, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -33.5
+      value: -29.5
       objectReference: {fileID: 0}
     - target: {fileID: 8244693556899119642, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
       propertyPath: m_LocalPosition.y
@@ -434,7 +434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8244693556899119642, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.5
+      value: -33.5
       objectReference: {fileID: 0}
     - target: {fileID: 8244693556899119642, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2465,6 +2465,7 @@ MonoBehaviour:
   pokemonToGive:
     pokemonBase: {fileID: 11400000, guid: a501eb37c033ce6478eaa7ea11635fe2, type: 2}
     level: 5
+    shiny: 0
   dialog:
     lines:
     - It's not safe to go out there without a Pokemon
@@ -3207,7 +3208,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fe57853ea4cc21942a2bc8ddd5f0e912, type: 2}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3267,24 +3268,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - pokemonBase: {fileID: 11400000, guid: 827d287da53380f48981eea3306b4ef1, type: 2}
-    level: 10
-  - pokemonBase: {fileID: 11400000, guid: 930d86fe7c2b0064e92e01cf89ec5fee, type: 2}
-    level: 15
-  - pokemonBase: {fileID: 11400000, guid: a501eb37c033ce6478eaa7ea11635fe2, type: 2}
-    level: 10
-  - pokemonBase: {fileID: 11400000, guid: b9c2a2b5dadfac74fb785e89db41b441, type: 2}
-    level: 14
-  - pokemonBase: {fileID: 11400000, guid: 5755a6f6c4c292a4483f9afcb4bd746a, type: 2}
-    level: 19
-  - pokemonBase: {fileID: 11400000, guid: abda7a473ea05954693fff31cd34f461, type: 2}
-    level: 2
-  - pokemonBase: {fileID: 11400000, guid: e9d55e3f0e1b3e24f9e1ad51d55716a1, type: 2}
-    level: 17
-  - pokemonBase: {fileID: 11400000, guid: 0039979718cdb3f47bd5d0b74fcb3436, type: 2}
-    level: 20
-  - pokemonBase: {fileID: 11400000, guid: 2b676907a64682246a5da797b26a1e51, type: 2}
-    level: 16
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  wildPokemonsInWater: []
+  totalChance: 0
+  totalChanceWater: 0
 --- !u!114 &5379910454084110443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3452,6 +3465,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons: []
+  wildPokemonsInWater: []
+  totalChance: 0
+  totalChanceWater: 0
 --- !u!1 &7170289942759194461
 GameObject:
   m_ObjectHideFlags: 0

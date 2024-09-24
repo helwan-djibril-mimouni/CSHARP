@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdd6dc8d697c4142a75d28b6cab876a, type: 3}
+  m_Name: 0890-Eternatus
+  m_EditorClassIdentifier: 
+  name: Eternatus
+  description: 
+  frontSprite: {fileID: 21300000, guid: 80b5bf3e6edc0084f94243e8de94c078, type: 3}
+  backSprite: {fileID: 21300000, guid: 0c95bb7ec2462a64aa3ede6ef471faee, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: ba5fa04df0981244cb6965eb8dd99178, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: b11d0e797c8dd6b46b0504ce9dd52d66, type: 3}
+  type1: 8
+  type2: 15
+  maxHP: 140
+  attack: 85
+  defense: 95
+  spAttack: 145
+  spDefense: 95
+  speed: 130
+  expYield: 345
+  growthRate: 0
+  catchRate: 255
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: b1532c0acc03c384783b90d2954013ff, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: f6ba091b014423f47a060c1456c3e370, type: 2}
+    level: 1
+  learnableByItems: []
+  evolutions: []

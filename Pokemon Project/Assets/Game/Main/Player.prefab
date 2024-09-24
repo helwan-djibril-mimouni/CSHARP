@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 3502243888464599695}
   - component: {fileID: 5322779351191377363}
   - component: {fileID: 2676097337944308681}
+  - component: {fileID: 982785163524371809}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -124,14 +125,19 @@ MonoBehaviour:
   pokemons:
   - pokemonBase: {fileID: 11400000, guid: a501eb37c033ce6478eaa7ea11635fe2, type: 2}
     level: 15
+    shiny: 1
   - pokemonBase: {fileID: 11400000, guid: 5755a6f6c4c292a4483f9afcb4bd746a, type: 2}
     level: 17
+    shiny: 0
   - pokemonBase: {fileID: 11400000, guid: e9d55e3f0e1b3e24f9e1ad51d55716a1, type: 2}
     level: 14
+    shiny: 1
   - pokemonBase: {fileID: 11400000, guid: b9c2a2b5dadfac74fb785e89db41b441, type: 2}
     level: 15
+    shiny: 0
   - pokemonBase: {fileID: 11400000, guid: 3486749e55d354d4082f22111711c3b1, type: 2}
     level: 13
+    shiny: 0
 --- !u!114 &1165709834834521971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,6 +295,8 @@ MonoBehaviour:
     count: 23
   - item: {fileID: 11400000, guid: 8a785da4c654b5f4b94bab54ea22e8f6, type: 2}
     count: 11
+  - item: {fileID: 11400000, guid: f63002335e6d68b48b6cf98fc94cbde2, type: 2}
+    count: 2
   tmSlots:
   - item: {fileID: 11400000, guid: 06bb8a653645bc64ba01f1d15afeb542, type: 2}
     count: 1
@@ -317,6 +325,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: 1000
+--- !u!114 &982785163524371809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165709834834521979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f4dae8d08239043803a040fab9d37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1165709834981909910
 GameObject:
   m_ObjectHideFlags: 0

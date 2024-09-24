@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Kadabra
   description: 
-  frontSprite: {fileID: 21300000, guid: dcfb64710fc52c34c8c18a8db14882af, type: 3}
-  backSprite: {fileID: 21300000, guid: f9fdf2de80a111e4388e07792f24ebff, type: 3}
+  frontSprite: {fileID: 21300000, guid: 7f223c7e972ec174db30545a9148e2ab, type: 3}
+  backSprite: {fileID: 21300000, guid: e15a2029bc6065541a8570bac7e6c3cf, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: 778e14dd93545b14a9da4736f68fd5ec, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 3644052ab74d9ba4393b1fb899e36555, type: 3}
   type1: 11
   type2: 0
   maxHP: 40
@@ -38,3 +40,4 @@ MonoBehaviour:
     level: 16
   learnableByItems:
   - {fileID: 11400000, guid: bbf788516f17c904c8d06f454049613e, type: 2}
+  evolutions: []

@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Charmeleon
   description: 
-  frontSprite: {fileID: 21300000, guid: 401f8c39904e6a34ea28ae81a420cefd, type: 3}
-  backSprite: {fileID: 21300000, guid: 09fdc4b24347dfa4da6046bb4cd8eb7e, type: 3}
+  frontSprite: {fileID: 21300000, guid: 681845789b962b94bbf4f58ee8016ba2, type: 3}
+  backSprite: {fileID: 21300000, guid: 9962ed528a1e86a429e1133c1450b7f3, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: 079cfb33ad2fd994a8b1fa37c07aad46, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 52fec9b38b74a534593fe9f4fe652449, type: 3}
   type1: 2
   type2: 0
   maxHP: 58

@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Jigglypuff
   description: 
-  frontSprite: {fileID: 21300000, guid: 0342b093d78d1f148a0dcdea442ef14c, type: 3}
-  backSprite: {fileID: 21300000, guid: 15554aeef4474ab4298f5754c4be95bd, type: 3}
+  frontSprite: {fileID: 21300000, guid: 7fe68f66ce056dd4698fb3e8bd975187, type: 3}
+  backSprite: {fileID: 21300000, guid: 227ce09e85761b340b5921a17b4ed643, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: d7b61eb83c38f6642b85d0dc9cc44b29, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 95b7fc953119cb54aad818fbf82b4029, type: 3}
   type1: 1
   type2: 18
   maxHP: 115
@@ -38,3 +40,4 @@ MonoBehaviour:
     level: 20
   learnableByItems:
   - {fileID: 11400000, guid: cf97331624011af42a8b5b3b437ed70e, type: 2}
+  evolutions: []

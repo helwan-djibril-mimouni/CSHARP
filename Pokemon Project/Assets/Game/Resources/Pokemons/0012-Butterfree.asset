@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Butterfree
   description: 
-  frontSprite: {fileID: 21300000, guid: 40d0a44bbe25b014d93f35de1ed48192, type: 3}
-  backSprite: {fileID: 21300000, guid: b91e9ce5077538f4c94d2edd1ed96fb3, type: 3}
+  frontSprite: {fileID: 21300000, guid: 10039c458447bb447a872a9ebb67b0f0, type: 3}
+  backSprite: {fileID: 21300000, guid: fde0099179245b047ac441677084cfdf, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: f457da505e0858042900700506c88c98, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 4ee2c70696f9e1547b19e6dbb9ab2baf, type: 3}
   type1: 12
   type2: 10
   maxHP: 60
@@ -38,3 +40,4 @@ MonoBehaviour:
     level: 18
   learnableByItems:
   - {fileID: 11400000, guid: bbf788516f17c904c8d06f454049613e, type: 2}
+  evolutions: []

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdd6dc8d697c4142a75d28b6cab876a, type: 3}
+  m_Name: 0034-Nidoking
+  m_EditorClassIdentifier: 
+  name: 
+  description: 
+  frontSprite: {fileID: 21300000, guid: c841ac3f9cf66be41932a314851a46bc, type: 3}
+  backSprite: {fileID: 21300000, guid: 57b9cd570b5879643b4f8f5055ba51b9, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: d5cc7c6479ffce44dbf75471a31dc147, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: d5832d5597ae7464484041bda5ad23fe, type: 3}
+  type1: 8
+  type2: 9
+  maxHP: 81
+  attack: 92
+  defense: 77
+  spAttack: 85
+  spDefense: 75
+  speed: 85
+  expYield: 253
+  growthRate: 3
+  catchRate: 45
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 8206745a5a1297648a08a97e9066b3e8, type: 2}
+    level: 21
+  - moveBase: {fileID: 11400000, guid: 6307d181e74f02e4fad8e46793c73b9a, type: 2}
+    level: 27
+  - moveBase: {fileID: 11400000, guid: f6ba091b014423f47a060c1456c3e370, type: 2}
+    level: 33
+  - moveBase: {fileID: 11400000, guid: d97e0f710f267e14c91670afe9214564, type: 2}
+    level: 40
+  learnableByItems:
+  - {fileID: 11400000, guid: bbf788516f17c904c8d06f454049613e, type: 2}
+  - {fileID: 11400000, guid: 8206745a5a1297648a08a97e9066b3e8, type: 2}
+  - {fileID: 11400000, guid: cf97331624011af42a8b5b3b437ed70e, type: 2}
+  evolutions: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bite
   m_EditorClassIdentifier: 
   name: Bite
-  description: 
+  description: Bites the enemy with sharp teeth
   type: 16
   power: 60
   accuracy: 100

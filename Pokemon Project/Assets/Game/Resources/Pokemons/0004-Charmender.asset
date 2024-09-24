@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Charmender
   description: 
-  frontSprite: {fileID: 21300000, guid: 02dfe7532e2da57418b0f69976986384, type: 3}
-  backSprite: {fileID: 21300000, guid: 1588abf9cbfb13a459c21f31c96e8b6f, type: 3}
+  frontSprite: {fileID: 21300000, guid: 6189c05237ce41f4dac517bcf07d0875, type: 3}
+  backSprite: {fileID: 21300000, guid: 6358f537e8513f44faa2630a492c7463, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: 9bb0a70aeeb84324295e1a5eec06557f, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 662fec91b61d9904591a9f1f5d09ba14, type: 3}
   type1: 2
   type2: 0
   maxHP: 39

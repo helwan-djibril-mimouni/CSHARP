@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Pikachu
   description: 
-  frontSprite: {fileID: 21300000, guid: 2516f8d839a1c4f4cb43adac7f2dd193, type: 3}
-  backSprite: {fileID: 21300000, guid: 7301d3ba04774ae4eacb9469063a0860, type: 3}
+  frontSprite: {fileID: 21300000, guid: f495d8c16d449d943b64e4989161b97c, type: 3}
+  backSprite: {fileID: 21300000, guid: fac5552cac528fb4bbaa3ea2fd302907, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: 65782b8cbef6fcb46be03cb91a4be2d3, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 6a3a89747c900654a9d67d2d145603f2, type: 3}
   type1: 5
   type2: 0
   maxHP: 45
@@ -24,7 +26,7 @@ MonoBehaviour:
   spAttack: 75
   spDefense: 60
   speed: 120
-  expYield: 1120
+  expYield: 112
   growthRate: 2
   catchRate: 190
   learnableMoves:

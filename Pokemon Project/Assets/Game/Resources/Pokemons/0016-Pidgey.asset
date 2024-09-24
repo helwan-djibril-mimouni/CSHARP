@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Pidgey
   description: 
-  frontSprite: {fileID: 21300000, guid: 8d7b04406ddafaa4981142b2aac55b0a, type: 3}
-  backSprite: {fileID: 21300000, guid: cd0b9b18724664c4697b62d58e434ce7, type: 3}
+  frontSprite: {fileID: 21300000, guid: 4184ba7a00547fb41934f52cadbdd17b, type: 3}
+  backSprite: {fileID: 21300000, guid: e2669b12ab7fe094cb76f61c705ebd6a, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: 0edfa285a3ac10a4bb6cc1bfb500c4b6, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 5f0703175fa64e445b6b5afaa688adae, type: 3}
   type1: 1
   type2: 10
   maxHP: 40

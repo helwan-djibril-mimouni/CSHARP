@@ -74,7 +74,14 @@ public class SummaryScreenUI : SelectionUI<TextSlot>
 
         nameText.text = pokemon.Base.Name;
         levelText.text = "Lv. " + pokemon.Level;
-        image.sprite = pokemon.Base.FrontSprite;
+        if (pokemon.Shiny)
+        {
+            image.sprite = pokemon.Base.ShinyFrontSprite;
+        }
+        else
+        {
+            image.sprite = pokemon.Base.FrontSprite;
+        }
     }
 
     public void ShowPage(int pageNum)

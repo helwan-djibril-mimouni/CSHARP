@@ -47,25 +47,34 @@ public class GameMenuState : State<GameController>
         }
         else if (selection == 2)
         {
-            SavingSystem.i.Save("saveSlot1");
+            StartCoroutine(SaveSelected());
         }
         else if (selection == 3)
         {
-            SavingSystem.i.Load("saveSlot1");
+            StartCoroutine(LoadSelected());
         }
         else if (selection == 4)
         {
-            //GameController.Instance.QuestUI.gameObject.SetActive(true);
-            //state = GameState.QuestList;
-            /*Action onBack = () =>
-            {
-                questUI.gameObject.SetActive(false);
-                state = GameState.FreeRoam;
-            };
-
-            questUI.HandleUpdate(onBack);*/
+            gc.StateMachine.Push(StorageState.i);
+        }
+        else if (selection == 5)
+        {
             gc.StateMachine.Push(QuestState.i);
         }
+    }
+
+    IEnumerator SaveSelected()
+    {
+        yield return Fader.i.FadeIn(0.5f);
+        SavingSystem.i.Save("saveSlot1");
+        yield return Fader.i.FadeOut(0.5f);
+    }
+
+    IEnumerator LoadSelected()
+    {
+        yield return Fader.i.FadeIn(0.5f);
+        SavingSystem.i.Load("saveSlot1");
+        yield return Fader.i.FadeOut(0.5f);
     }
 
     void OnBack()

@@ -30,7 +30,7 @@ public class BattleState : State<GameController>
         if (trainer == null)
         {
             var wildPokemon = gc.CurrentScene.GetComponent<MapArea>().GetRandomWildPokemon(trigger);
-            var wildPokemonCopy = new Pokemon(wildPokemon.Base, wildPokemon.Level);
+            var wildPokemonCopy = new Pokemon(wildPokemon.Base, wildPokemon.Level, wildPokemon.Shiny);
             battleSystem.StartBattle(playerParty, wildPokemonCopy);
         }
         else

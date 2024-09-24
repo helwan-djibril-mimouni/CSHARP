@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Scratch
   m_EditorClassIdentifier: 
   name: Scratch
-  description: 
+  description: Scratches the foe with its claws
   type: 1
   power: 40
   accuracy: 100
