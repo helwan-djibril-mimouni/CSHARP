@@ -47,21 +47,26 @@ public class CutsceneEditor : Editor
             {
                 cutscene.AddAction(new NPCInteractAction());
             }
-            else if (GUILayout.Button("Fade In"))
+            else if (GUILayout.Button("NPC Exclamation"))
+            {
+                cutscene.AddAction(new NPCExclamationAction());
+            }
+            else if (GUILayout.Button("Trainer Interact"))
+            {
+                cutscene.AddAction(new TrainerInteractAction());
+            }
+        }
+
+        using (var scope = new GUILayout.HorizontalScope())
+        {
+            
+            if (GUILayout.Button("Fade In"))
             {
                 cutscene.AddAction(new FadeInAction());
             }
             else if (GUILayout.Button("Fade Out"))
             {
                 cutscene.AddAction(new FadeOutAction());
-            }
-        }
-
-        using (var scope = new GUILayout.HorizontalScope())
-        {
-            if (GUILayout.Button("NPC Exclamation"))
-            {
-                cutscene.AddAction(new NPCExclamationAction());
             }
         }
 

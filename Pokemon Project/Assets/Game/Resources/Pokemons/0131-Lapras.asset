@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdd6dc8d697c4142a75d28b6cab876a, type: 3}
+  m_Name: 0131-Lapras
+  m_EditorClassIdentifier: 
+  name: Lapras
+  description: 
+  frontSprite: {fileID: 21300000, guid: 55fbf4120ffdd3641949a0b36ebc65f5, type: 3}
+  backSprite: {fileID: 21300000, guid: 17adb9b0b4e0c4144972511cc27fcf78, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: c8de698b62695aa4b95c19cae2c302a6, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 1c6f6b22c3f75d34fae1a9fa325ea608, type: 3}
+  type1: 3
+  type2: 6
+  maxHP: 130
+  attack: 85
+  defense: 80
+  spAttack: 85
+  spDefense: 95
+  speed: 60
+  expYield: 187
+  growthRate: 4
+  catchRate: 45
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 366b2f1fe273fa04d88941c593abf957, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 5246da6e1bac148458091538d8118d95, type: 2}
+    level: 20
+  - moveBase: {fileID: 11400000, guid: cec0e94902e1e9e43bb8c483d0b3c89f, type: 2}
+    level: 35
+  - moveBase: {fileID: 11400000, guid: 5e59be10dd8b8b946b3e1a1309708922, type: 2}
+    level: 50
+  learnableByItems: []
+  evolutions: []

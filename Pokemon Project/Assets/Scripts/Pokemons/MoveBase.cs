@@ -22,6 +22,7 @@ public class MoveBase : ScriptableObject
     [SerializeField] List<SecondaryEffects> secondaryEffects;
     [SerializeField] MoveTarget target;
     [SerializeField] RecoilMoveEffect recoil;
+    [SerializeField] int drainingPercentage = 0;
     [SerializeField] AudioClip sound;
 
     public string Name
@@ -93,6 +94,8 @@ public class MoveBase : ScriptableObject
     {
         get { return recoil; }
     }
+
+    public int DrainingPercentage => drainingPercentage;
 
     public AudioClip Sound => sound;
 }

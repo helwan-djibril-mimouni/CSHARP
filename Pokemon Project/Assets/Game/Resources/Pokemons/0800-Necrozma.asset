@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdd6dc8d697c4142a75d28b6cab876a, type: 3}
+  m_Name: 0800-Necrozma
+  m_EditorClassIdentifier: 
+  name: Necrozma
+  description: 
+  frontSprite: {fileID: 21300000, guid: 0ad1c2a1920d226488673d564f08f095, type: 3}
+  backSprite: {fileID: 21300000, guid: 974ea8198ebff3d428a5b3905c04da1e, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: 1da3a46892383de4caf6a01fcf69f1a0, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: bdb7a0c7df1676e40aaf042a0ae80ce4, type: 3}
+  type1: 11
+  type2: 0
+  maxHP: 97
+  attack: 107
+  defense: 101
+  spAttack: 127
+  spDefense: 89
+  speed: 79
+  expYield: 270
+  growthRate: 4
+  catchRate: 255
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 80dea6c8eda777d40a9eed3919ec1952, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: fcae95c4cf2351848a172ecd1c755ce5, type: 2}
+    level: 20
+  - moveBase: {fileID: 11400000, guid: 5a9d6deeae12bcd4db59c13ea4a356a5, type: 2}
+    level: 40
+  - moveBase: {fileID: 11400000, guid: b66900192e196b24687e238acbedb46b, type: 2}
+    level: 65
+  learnableByItems: []
+  evolutions: []

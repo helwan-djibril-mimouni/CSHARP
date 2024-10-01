@@ -1,6 +1,7 @@
 using GDEUtils.StateMachine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using UnityEngine;
 
@@ -154,6 +155,8 @@ public class RunTurnState : State<BattleSystem>
                 }
             }
 
+            yield return RunAfterMove(damageDetails, move.Base, sourceUnit, targetUnit.Pokemon);
+
             if (targetUnit.Pokemon.HP <= 0)
             {
                 yield return HandlePokemonFainted(targetUnit);
@@ -191,6 +194,48 @@ public class RunTurnState : State<BattleSystem>
         }
 
         yield return ShowStatusChanges(source);
+        yield return ShowStatusChanges(target);
+    }
+
+    IEnumerator RunAfterMove(DamageDetails details, MoveBase move, BattleUnit sourceUnit, Pokemon target)
+    {
+        if (details == null)
+            yield break;
+
+        if (move.DrainingPercentage != 0)
+        {
+            int healedHP = Mathf.Clamp(Mathf.CeilToInt(details.DamageDealt / 100f * move.DrainingPercentage), 1, sourceUnit.Pokemon.MaxHP);
+            sourceUnit.Pokemon.IncreaseHP(healedHP);
+            yield return sourceUnit.Hud.WaitForHPUpdate();
+        }
+
+        if (move.Recoil.recoilType != RecoilType.None)
+        {
+            int damage = 0;
+            switch (move.Recoil.recoilType)
+            {
+                case RecoilType.RecoilByMaxHP:
+                    int maxHp = sourceUnit.Pokemon.MaxHP;
+                    damage = Mathf.FloorToInt(maxHp * (move.Recoil.recoilDamage / 100f));
+                    sourceUnit.Pokemon.TakeRecoilDamage(damage);
+                    break;
+                case RecoilType.RecoilByCurrentHP:
+                    int currentHp = sourceUnit.Pokemon.HP;
+                    damage = Mathf.FloorToInt(currentHp * (move.Recoil.recoilDamage / 100f));
+                    sourceUnit.Pokemon.TakeRecoilDamage(damage);
+                    break;
+                case RecoilType.RecoilByDamage:
+                    damage = Mathf.FloorToInt(details.DamageDealt * (move.Recoil.recoilDamage / 100f));
+                    sourceUnit.Pokemon.TakeRecoilDamage(damage);
+                    break;
+                default:
+                    UnityEngine.Debug.Log("Error: Unknown Recoil Effect");
+                    break;
+            }
+        }
+
+        //ReUsed from status changes
+        yield return ShowStatusChanges(sourceUnit.Pokemon);
         yield return ShowStatusChanges(target);
     }
 

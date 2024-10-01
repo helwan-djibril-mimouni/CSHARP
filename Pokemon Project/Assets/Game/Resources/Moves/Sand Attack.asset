@@ -33,4 +33,4 @@ MonoBehaviour:
   recoil:
     recoilType: 0
     recoilDamage: 0
-  sound: {fileID: 8300000, guid: 04612459f0f17ce4c8cda4fb04a3d8c4, type: 3}
+  sound: {fileID: 8300000, guid: 304c74f311b131243b10a3a8d6ccd130, type: 3}
