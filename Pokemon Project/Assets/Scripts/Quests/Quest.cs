@@ -46,9 +46,13 @@ public class Quest
         yield return DialogManager.Instance.ShowDialog(Base.CompletedDialogue);
 
         var inventory = Inventory.GetInventory();
-        if (Base.RequiredItem != null)
+        if (Base.RequiredItem.Count <= 1)
         {
-            inventory.RemoveItem(Base.RequiredItem);
+            UnityEngine.Debug.Log(Base.RequiredItem.Count);
+            foreach (var item in Base.RequiredItem)
+            {
+                inventory.RemoveItem(item);
+            }
         }
 
         if (Base.RewardItem != null)
@@ -68,9 +72,12 @@ public class Quest
         var inventory = Inventory.GetInventory();
         if (Base.RequiredItem != null)
         {
-            if (!inventory.HasItem(Base.RequiredItem))
+            foreach (var item in Base.RequiredItem)
             {
-                return false;
+                if (!inventory.HasItem(item))
+                {
+                    return false;
+                }
             }
         }
 

@@ -8,4 +8,5 @@ public interface IPlayerTriggerable
     void OnPlayerTriggered(PlayerController player, Action OnTriggerFinished=null);
 
     bool TriggerRepeatedly { get; }
+    bool TriggerInside { get; }
 }

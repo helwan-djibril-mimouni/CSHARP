@@ -12,4 +12,5 @@ public class TrainerFOV : MonoBehaviour, IPlayerTriggerable
     }
 
     public bool TriggerRepeatedly => false;
+    public bool TriggerInside => false;
 }

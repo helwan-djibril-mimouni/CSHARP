@@ -20,5 +20,5 @@ MonoBehaviour:
     lines: []
   completedDialogue:
     lines: []
-  requiredItem: {fileID: 0}
+  requiredItem: []
   rewardItem: {fileID: 0}

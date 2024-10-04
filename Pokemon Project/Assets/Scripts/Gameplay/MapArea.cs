@@ -51,7 +51,7 @@ public class MapArea : MonoBehaviour
         int level = levelRange.y == 0 ? levelRange.x : Random.Range(levelRange.x, levelRange.y + 1);
 
         bool shiny = false;
-        if (randVal < 50)
+        if (randVal == 1)
         {
             shiny = true;
         }

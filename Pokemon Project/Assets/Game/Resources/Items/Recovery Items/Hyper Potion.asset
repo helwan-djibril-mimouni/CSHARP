@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Hyper Potion
   description: Recovers the health of a Pokemon by 120 points
-  icon: {fileID: 251588454, guid: 08be66bb6c378e54db171b0e7e971f19, type: 3}
+  icon: {fileID: 21300000, guid: dc7cb8c1fe68b6144bb7f3fb17aa2b56, type: 3}
   price: 1200
   isSellable: 1
   hpAmount: 0

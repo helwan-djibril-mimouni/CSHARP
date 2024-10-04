@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Awakening
   description: Recovers a Pokemon from sleeping
-  icon: {fileID: -1205830017, guid: 08be66bb6c378e54db171b0e7e971f19, type: 3}
+  icon: {fileID: 21300000, guid: 904448c83e307814a8fd2cedb7eff273, type: 3}
   price: 250
   isSellable: 1
   hpAmount: 0

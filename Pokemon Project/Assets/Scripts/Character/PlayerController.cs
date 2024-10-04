@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour, ISavable
 
     private Character character;
 
+    IPlayerTriggerable currentlyInTrigger;
+
     private void Awake()
     {
         i = this;
@@ -42,6 +44,27 @@ public class PlayerController : MonoBehaviour, ISavable
         {
             StartCoroutine(Interact());
         }
+
+        var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, character.OffsetY), 0.2f, GameLayers.Instance.TriggerableLayers);
+
+        IPlayerTriggerable triggerable = null;
+        foreach (var collider in colliders)
+        {
+            triggerable = collider.GetComponent<IPlayerTriggerable>();
+            if (triggerable != null)
+            {
+                if (triggerable.TriggerInside && GameController.Instance.StateMachine.CurrentState != CutsceneState.i && GameController.Instance.StateMachine.CurrentState != DialogueState.i)
+                {
+                    triggerable.OnPlayerTriggered(this);
+                    currentlyInTrigger = triggerable;
+                }
+            }
+        }
+
+        if (colliders.Count() == 0 || triggerable != currentlyInTrigger)
+        {
+            currentlyInTrigger = null;
+        }
     }
 
     IEnumerator Interact()
@@ -57,8 +80,6 @@ public class PlayerController : MonoBehaviour, ISavable
             yield return collider.GetComponent<Interactable>()?.Interact(transform);
         }
     }
-
-    IPlayerTriggerable currentlyInTrigger;
 
     private void OnMoveOver()
     {

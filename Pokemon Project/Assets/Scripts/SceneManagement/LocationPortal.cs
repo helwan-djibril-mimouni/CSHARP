@@ -19,6 +19,7 @@ public class LocationPortal : MonoBehaviour, IPlayerTriggerable
     }
 
     public bool TriggerRepeatedly => false;
+    public bool TriggerInside => false;
 
     Fader fader;
 

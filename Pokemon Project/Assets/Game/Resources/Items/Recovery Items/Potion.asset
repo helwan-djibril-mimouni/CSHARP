@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Potion
   description: Recovers the health of a Pokemon by 20 points
-  icon: {fileID: -2024245516, guid: 08be66bb6c378e54db171b0e7e971f19, type: 3}
+  icon: {fileID: 21300000, guid: b6572bd296db47d4cb625cce3aa9ef0d, type: 3}
   price: 300
   isSellable: 1
   hpAmount: 20

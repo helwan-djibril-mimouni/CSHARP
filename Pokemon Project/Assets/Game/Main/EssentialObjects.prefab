@@ -278,7 +278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 25.999931, y: -8.9999895}
+  m_AnchoredPosition: {x: 25.999924, y: -8.9999895}
   m_SizeDelta: {x: -106, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &252167709265513627
@@ -9060,6 +9060,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1165709834834521980, guid: 73c802c1b796141429c50884acb7baff, type: 3}
+      propertyPath: name
+      value: Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165709834834521980, guid: 73c802c1b796141429c50884acb7baff, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: -560596785, guid: 2d31375b8ab874644b2917e3852cc26d, type: 3}
     - target: {fileID: 1165709834834521983, guid: 73c802c1b796141429c50884acb7baff, type: 3}
       propertyPath: m_RootOrder
       value: 0

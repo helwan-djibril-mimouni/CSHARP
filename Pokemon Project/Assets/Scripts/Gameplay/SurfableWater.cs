@@ -10,6 +10,7 @@ public class SurfableWater : MonoBehaviour, Interactable, IPlayerTriggerable
     bool isJumpingToWater = false;
 
     public bool TriggerRepeatedly => true;
+    public bool TriggerInside => false;
 
     public IEnumerator Interact(Transform initiator)
     {

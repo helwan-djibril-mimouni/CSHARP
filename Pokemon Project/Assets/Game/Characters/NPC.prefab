@@ -99,7 +99,6 @@ GameObject:
   - component: {fileID: 8244693556899119639}
   - component: {fileID: 8244693556899119633}
   - component: {fileID: 8244693556899119638}
-  - component: {fileID: 1077087250321601062}
   - component: {fileID: 156076158470679039}
   m_Layer: 10
   m_Name: NPC
@@ -295,22 +294,6 @@ MonoBehaviour:
   - {fileID: 1573635460, guid: 3047f76e9abe38d4b82f45e10f25abf2, type: 3}
   surfSprites: []
   defaultDirection: 1
---- !u!114 &1077087250321601062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8244693556899119640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce86dc64d1ea0694a86bdf1f5bf29e0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  count: 1
-  dialog:
-    lines: []
 --- !u!114 &156076158470679039
 MonoBehaviour:
   m_ObjectHideFlags: 0

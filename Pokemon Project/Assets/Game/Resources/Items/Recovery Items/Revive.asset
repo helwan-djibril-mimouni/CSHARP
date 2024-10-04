@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Revive
   description: Revives a Pokemon
-  icon: {fileID: 1070137692, guid: 08be66bb6c378e54db171b0e7e971f19, type: 3}
+  icon: {fileID: 21300000, guid: cf6f3189e933f38459b97de944f503ea, type: 3}
   price: 1500
   isSellable: 1
   hpAmount: 0

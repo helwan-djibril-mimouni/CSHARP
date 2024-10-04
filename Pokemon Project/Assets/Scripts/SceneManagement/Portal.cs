@@ -21,6 +21,7 @@ public class Portal : MonoBehaviour, IPlayerTriggerable
     }
 
     public bool TriggerRepeatedly => false;
+    public bool TriggerInside => false;
 
     Fader fader;
 

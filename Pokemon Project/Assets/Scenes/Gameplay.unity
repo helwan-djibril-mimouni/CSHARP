@@ -236,7 +236,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
   m_PrefabInstance: {fileID: 375174130035834602}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911599716}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51b2c0f85d1130d478e206d999cff20e, type: 3}
@@ -353,7 +353,7 @@ PrefabInstance:
     - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: connectedScenes.Array.data[0]
       value: 
-      objectReference: {fileID: 1657196271}
+      objectReference: {fileID: 330390222}
     - target: {fileID: 375174130752643438, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_Name
       value: Town2
@@ -364,11 +364,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19
+      value: -21
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7164,33 +7164,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - pokemon: {fileID: 11400000, guid: 827d287da53380f48981eea3306b4ef1, type: 2}
-    levelRange: {x: 0, y: 0}
-    chancePercentage: 5
-  - pokemon: {fileID: 11400000, guid: a501eb37c033ce6478eaa7ea11635fe2, type: 2}
-    levelRange: {x: 0, y: 0}
-    chancePercentage: 5
-  - pokemon: {fileID: 11400000, guid: b9c2a2b5dadfac74fb785e89db41b441, type: 2}
-    levelRange: {x: 0, y: 0}
-    chancePercentage: 5
   - pokemon: {fileID: 11400000, guid: abda7a473ea05954693fff31cd34f461, type: 2}
-    levelRange: {x: 0, y: 0}
-    chancePercentage: 20
-  - pokemon: {fileID: 11400000, guid: e9d55e3f0e1b3e24f9e1ad51d55716a1, type: 2}
-    levelRange: {x: 0, y: 0}
-    chancePercentage: 20
+    levelRange: {x: 2, y: 5}
+    chancePercentage: 50
   - pokemon: {fileID: 11400000, guid: dfe519bc72fb3c344ab697f501a1c0e9, type: 2}
-    levelRange: {x: 0, y: 0}
-    chancePercentage: 15
-  - pokemon: {fileID: 11400000, guid: 3486749e55d354d4082f22111711c3b1, type: 2}
-    levelRange: {x: 0, y: 0}
-    chancePercentage: 9
-  - pokemon: {fileID: 11400000, guid: 0039979718cdb3f47bd5d0b74fcb3436, type: 2}
-    levelRange: {x: 0, y: 0}
-    chancePercentage: 20
-  - pokemon: {fileID: 11400000, guid: 2b676907a64682246a5da797b26a1e51, type: 2}
-    levelRange: {x: 0, y: 0}
-    chancePercentage: 1
+    levelRange: {x: 2, y: 4}
+    chancePercentage: 50
   wildPokemonsInWater: []
   totalChance: 100
   totalChanceWater: 0
@@ -7244,42 +7223,6 @@ MonoBehaviour:
   wildPokemonsInWater: []
   totalChance: 100
   totalChanceWater: 0
---- !u!1 &1911599716 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 375174130752643438, guid: c65d344a808312742847fffd9f9ca946, type: 3}
-  m_PrefabInstance: {fileID: 375174130035834602}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1911599719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911599716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80706fc96485d6643916eb84e990478e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wildPokemons:
-  - pokemon: {fileID: 11400000, guid: e9d55e3f0e1b3e24f9e1ad51d55716a1, type: 2}
-    levelRange: {x: 3, y: 5}
-    chancePercentage: 2
-  - pokemon: {fileID: 11400000, guid: 827d287da53380f48981eea3306b4ef1, type: 2}
-    levelRange: {x: 5, y: 0}
-    chancePercentage: 1
-  - pokemon: {fileID: 11400000, guid: a501eb37c033ce6478eaa7ea11635fe2, type: 2}
-    levelRange: {x: 5, y: 0}
-    chancePercentage: 1
-  - pokemon: {fileID: 11400000, guid: b9c2a2b5dadfac74fb785e89db41b441, type: 2}
-    levelRange: {x: 5, y: 0}
-    chancePercentage: 1
-  - pokemon: {fileID: 11400000, guid: ab3b5dea7afd2b4478835218d0ab4efd, type: 2}
-    levelRange: {x: 5, y: 0}
-    chancePercentage: 95
-  wildPokemonsInWater: []
-  totalChance: 100
-  totalChanceWater: 0
 --- !u!1001 &2089841181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7288,12 +7231,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Size.x
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_Size.y
-      value: 18
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Offset.x
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_Offset.y
-      value: 0
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: sceneMusic
@@ -7325,7 +7276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.5
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7369,8 +7320,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Size.x
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_Size.y
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Offset.x
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_Offset.y
@@ -7382,7 +7341,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: df2ad296004fcc748aeae28adc6984b5, type: 3}
     - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: connectedScenes.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: connectedScenes.Array.data[0]
@@ -7396,9 +7355,13 @@ PrefabInstance:
       propertyPath: connectedScenes.Array.data[2]
       value: 
       objectReference: {fileID: 115256934}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.data[3]
+      value: 
+      objectReference: {fileID: 485949930}
     - target: {fileID: 375174130752643438, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_Name
-      value: HomeTown
+      value: Pallet Town
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_RootOrder

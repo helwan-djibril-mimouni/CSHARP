@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Fresh Water
   description: Recovers the health of a Pokemon by 30 points
-  icon: {fileID: -1341779587, guid: 08be66bb6c378e54db171b0e7e971f19, type: 3}
+  icon: {fileID: 21300000, guid: eb3c0e10ed2e6b24c8e9cc5e5cd2872f, type: 3}
   price: 200
   isSellable: 1
   hpAmount: 30

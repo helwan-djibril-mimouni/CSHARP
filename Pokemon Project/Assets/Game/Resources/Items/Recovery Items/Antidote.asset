@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Antidote
   description: Recovers a Pokemon from poison
-  icon: {fileID: 1875376249, guid: 08be66bb6c378e54db171b0e7e971f19, type: 3}
+  icon: {fileID: 21300000, guid: ca2bf87e2b1a7b7438f3afa195a878d5, type: 3}
   price: 100
   isSellable: 1
   hpAmount: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Elixir
   description: Recovers the PP of all the moves of a Pokemon by 10 points
-  icon: {fileID: 157793350, guid: 08be66bb6c378e54db171b0e7e971f19, type: 3}
+  icon: {fileID: 21300000, guid: a4088264875e92d47ae91b8ef83b54e5, type: 3}
   price: 3000
   isSellable: 1
   hpAmount: 0

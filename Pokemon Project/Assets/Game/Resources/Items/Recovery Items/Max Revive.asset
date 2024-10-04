@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Max Revive
   description: Revives a Pokemon with full health
-  icon: {fileID: 1008206608, guid: 08be66bb6c378e54db171b0e7e971f19, type: 3}
+  icon: {fileID: 21300000, guid: b803d1fdaf3e40b4b929543b24deab38, type: 3}
   price: 5000
   isSellable: 1
   hpAmount: 0

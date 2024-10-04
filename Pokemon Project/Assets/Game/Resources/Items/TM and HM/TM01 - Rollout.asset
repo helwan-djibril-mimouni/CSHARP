@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: TM01
   description: Teaches the move Rollout to a Pokemon
-  icon: {fileID: 21201885, guid: 3ae12697ae504414bbf0797ea36dfddd, type: 3}
+  icon: {fileID: 21300000, guid: 496229687a9e8824e99188117d9f3522, type: 3}
   price: 54000
   isSellable: 1
   move: {fileID: 11400000, guid: cf97331624011af42a8b5b3b437ed70e, type: 2}
