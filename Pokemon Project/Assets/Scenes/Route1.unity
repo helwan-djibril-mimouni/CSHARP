@@ -356,6 +356,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
+--- !u!1 &194438395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8244693556899119640, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
+  m_PrefabInstance: {fileID: 194438394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &194438396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194438395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce86dc64d1ea0694a86bdf1f5bf29e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 593b3a0749f3b55448130da1c1c51a81, type: 2}
+  count: 1
+  dialog:
+    lines:
+    - "Hi ! I work at a Pok\xE9mon Mart."
+    - Oh, you already know ?
+    - Well, you can still take a little sample of what we sell.
 --- !u!1001 &405749462
 PrefabInstance:
   m_ObjectHideFlags: 0

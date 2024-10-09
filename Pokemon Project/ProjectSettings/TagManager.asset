@@ -21,7 +21,7 @@ TagManager:
   - Portal
   - Triggers
   - Ledges
-  - 
+  - SeeBeforePlayer
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: Battle
     uniqueID: 4259185935
+    locked: 0
+  - name: BeforePlayer
+    uniqueID: 2653360305
     locked: 0
