@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acdd6dc8d697c4142a75d28b6cab876a, type: 3}
   m_Name: 0034-Nidoking
   m_EditorClassIdentifier: 
-  name: 
+  name: Nidoking
   description: 
   frontSprite: {fileID: 21300000, guid: c841ac3f9cf66be41932a314851a46bc, type: 3}
   backSprite: {fileID: 21300000, guid: 57b9cd570b5879643b4f8f5055ba51b9, type: 3}

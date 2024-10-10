@@ -27,4 +27,5 @@ MonoBehaviour:
     - Here, take this as a reward !
   requiredItem:
   - {fileID: 11400000, guid: 903167c135c51724ebd1f7c1aebcaa3f, type: 2}
+  removeItem: 1
   rewardItem: {fileID: 11400000, guid: 0716ecf310125bb489837f777019184a, type: 2}

@@ -46,12 +46,14 @@ public class Quest
         yield return DialogManager.Instance.ShowDialog(Base.CompletedDialogue);
 
         var inventory = Inventory.GetInventory();
-        if (Base.RequiredItem.Count <= 1)
+        if (Base.RequiredItem.Count >= 1)
         {
-            UnityEngine.Debug.Log(Base.RequiredItem.Count);
             foreach (var item in Base.RequiredItem)
             {
-                inventory.RemoveItem(item);
+                if (Base.RemoveItem)
+                {
+                    inventory.RemoveItem(item);
+                }
             }
         }
 
@@ -65,17 +67,24 @@ public class Quest
 
         var questList = QuestList.GetQuestList();
         questList.AddQuest(this);
+        UnityEngine.Debug.Log($"{Base.Name} : completed");
+    }
+
+    public void ForceComplete()
+    {
+        Status = QuestStatus.Completed;
     }
 
     public bool CanBeCompleted()
     {
         var inventory = Inventory.GetInventory();
-        if (Base.RequiredItem != null)
+        if (Base.RequiredItem.Count >= 1)
         {
             foreach (var item in Base.RequiredItem)
             {
                 if (!inventory.HasItem(item))
                 {
+                    UnityEngine.Debug.Log(item.Name);
                     return false;
                 }
             }

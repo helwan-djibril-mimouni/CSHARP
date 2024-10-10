@@ -156,11 +156,11 @@ PrefabInstance:
       objectReference: {fileID: 330390222}
     - target: {fileID: 375174130752643438, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_Name
-      value: House1
+      value: Oak's Lab
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_LocalPosition.x
@@ -360,7 +360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_LocalPosition.x
@@ -410,6 +410,139 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 485949929}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743210923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b2c0f85d1130d478e206d999cff20e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &549007816
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Size.x
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Size.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: sceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 6cffb14cafdb9d543ac8caa32d65725d, type: 3}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1657196271}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.data[1]
+      value: 
+      objectReference: {fileID: 1588940826}
+    - target: {fileID: 375174130752643438, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Name
+      value: Viridian City
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+--- !u!1 &549007817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 375174130752643438, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+  m_PrefabInstance: {fileID: 549007816}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &549007818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549007817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80706fc96485d6643916eb84e990478e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wildPokemons:
+  - pokemon: {fileID: 11400000, guid: abda7a473ea05954693fff31cd34f461, type: 2}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 50
+  - pokemon: {fileID: 11400000, guid: e9d55e3f0e1b3e24f9e1ad51d55716a1, type: 2}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 30
+  - pokemon: {fileID: 11400000, guid: 3486749e55d354d4082f22111711c3b1, type: 2}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 19
+  - pokemon: {fileID: 11400000, guid: 5755a6f6c4c292a4483f9afcb4bd746a, type: 2}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 1
+  wildPokemonsInWater: []
+  totalChance: 100
+  totalChanceWater: 0
+--- !u!114 &549007819 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+  m_PrefabInstance: {fileID: 549007816}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549007817}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51b2c0f85d1130d478e206d999cff20e, type: 3}
@@ -744,7 +877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 252167710545152422, guid: 820ab76c13b682e448ddd5b1c55622b3, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 252167710545152422, guid: 820ab76c13b682e448ddd5b1c55622b3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7140,6 +7273,139 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820ab76c13b682e448ddd5b1c55622b3, type: 3}
+--- !u!1001 &1588940824
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Size.x
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Size.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: sceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 6cffb14cafdb9d543ac8caa32d65725d, type: 3}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.data[0]
+      value: 
+      objectReference: {fileID: 549007819}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.data[1]
+      value: 
+      objectReference: {fileID: 1588940826}
+    - target: {fileID: 375174130752643438, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Name
+      value: Viridian Gym
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+--- !u!1 &1588940825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 375174130752643438, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+  m_PrefabInstance: {fileID: 1588940824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1588940826 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+  m_PrefabInstance: {fileID: 1588940824}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588940825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b2c0f85d1130d478e206d999cff20e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1588940827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588940825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80706fc96485d6643916eb84e990478e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wildPokemons:
+  - pokemon: {fileID: 11400000, guid: abda7a473ea05954693fff31cd34f461, type: 2}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 50
+  - pokemon: {fileID: 11400000, guid: e9d55e3f0e1b3e24f9e1ad51d55716a1, type: 2}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 30
+  - pokemon: {fileID: 11400000, guid: 3486749e55d354d4082f22111711c3b1, type: 2}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 19
+  - pokemon: {fileID: 11400000, guid: 5755a6f6c4c292a4483f9afcb4bd746a, type: 2}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 1
+  wildPokemonsInWater: []
+  totalChance: 100
+  totalChanceWater: 0
 --- !u!114 &1657196271 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
@@ -7261,14 +7527,18 @@ PrefabInstance:
     - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: connectedScenes.Array.data[1]
       value: 
-      objectReference: {fileID: 485949930}
+      objectReference: {fileID: 549007819}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.data[2]
+      value: 
+      objectReference: {fileID: 549007819}
     - target: {fileID: 375174130752643438, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_Name
       value: Route1
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_LocalPosition.x

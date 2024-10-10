@@ -44,11 +44,10 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
 
             if (questToComplete != null)
             {
+                UnityEngine.Debug.Log($"ok");
                 var quest = new Quest(questToComplete);
                 yield return quest.CompleteQuest(initiator);
                 questToComplete = null;
-
-                Debug.Log($"{quest.Base.Name} : completed");
             }
 
             if (itemGiver != null && itemGiver.CanBeGiven())
@@ -62,13 +61,16 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             else if (questToStart != null)
             {
                 activeQuest = new Quest(questToStart);
-                yield return activeQuest.StartQuest();
                 questToStart = null;
 
                 if (activeQuest.CanBeCompleted())
                 {
                     yield return activeQuest.CompleteQuest(initiator);
                     activeQuest = null;
+                }
+                else
+                {
+                    yield return activeQuest.StartQuest();
                 }
             }
             else if (activeQuest != null)

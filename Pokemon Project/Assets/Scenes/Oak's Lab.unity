@@ -280,7 +280,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 156076158470679039, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
       propertyPath: uniqueId
-      value: cb726748-0b51-40a6-8ec9-191aa6974a4e
+      value: d54c886c-1951-4ed4-8ad0-3ed809ce7583
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244693556899119639, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
+      propertyPath: questToStart
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8244693556899119639, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
       propertyPath: questToComplete
@@ -394,11 +398,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 156076158470679039, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
       propertyPath: uniqueId
-      value: 816db54b-2750-40f5-9cc5-db371f56bab2
+      value: 97f57653-2815-491d-b5ba-06963593a162
       objectReference: {fileID: 0}
     - target: {fileID: 8244693556899119638, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
       propertyPath: defaultDirection
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244693556899119639, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
+      propertyPath: questToStart
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8244693556899119639, guid: a6ed43e8effa7ed4cb2a9215c86acc49, type: 3}
       propertyPath: questToComplete

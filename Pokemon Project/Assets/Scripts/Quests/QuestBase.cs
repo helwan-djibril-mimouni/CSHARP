@@ -12,7 +12,8 @@ public class QuestBase : ScriptableObject
     [SerializeField] Dialog inProgressDialogue;
     [SerializeField] Dialog completedDialogue;
 
-    [SerializeField] List<ItemBase> requiredItem; // can be list if we need multiple objects as a requirement
+    [SerializeField] List<ItemBase> requiredItem;
+    [SerializeField] bool removeItem;
     [SerializeField] ItemBase rewardItem; // can be list if we need multiple objects as a reward
 
     public string Name => name;
@@ -23,5 +24,6 @@ public class QuestBase : ScriptableObject
     public Dialog CompletedDialogue => completedDialogue;
 
     public List<ItemBase> RequiredItem => requiredItem;
+    public bool RemoveItem => removeItem;
     public ItemBase RewardItem => rewardItem;
 }

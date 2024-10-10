@@ -14,9 +14,23 @@ public class QuestList : MonoBehaviour, ISavable
 
     public void AddQuest(Quest quest)
     {
-        if (!quests.Contains(quest))
+        bool ok = true;
+        foreach (var q in quests)
+        {
+            if (q.Base.Name == quest.Base.Name)
+            {
+                ok = false;
+            }
+        }
+
+        if (ok)
         {
             quests.Add(quest);
+        }
+        else
+        {
+            var q = quests.FirstOrDefault(q => q.Base.Name == quest.Base.Name);
+            q.ForceComplete();
         }
 
         OnUpdated?.Invoke();
