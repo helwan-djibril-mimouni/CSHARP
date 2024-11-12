@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6459d84aeb3aab24c87dd77ebbf0146f, type: 3}
-  m_Name: Meet The Professor
+  m_Name: Meet Blue
   m_EditorClassIdentifier: 
-  name: Meet The Professor
-  description: You met Professor Oak in his Lab
+  name: Meet Blue
+  description: Professor Oak asked you to meet Blue at Viridium City's gym
   startDialogue:
     lines: []
   inProgressDialogue:

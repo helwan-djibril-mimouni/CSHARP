@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: First Encounter With Giovanni
   m_EditorClassIdentifier: 
   name: First Encounter With Giovanni
-  description: "A mysterious man challenged you with very powerful Pok\xE9mon"
+  description: "A mysterious man challenged you with very powerful Pok\xE9mon you
+    never saw before"
   startDialogue:
     lines: []
   inProgressDialogue:
@@ -21,4 +22,5 @@ MonoBehaviour:
   completedDialogue:
     lines: []
   requiredItem: []
+  removeItem: 0
   rewardItem: {fileID: 0}

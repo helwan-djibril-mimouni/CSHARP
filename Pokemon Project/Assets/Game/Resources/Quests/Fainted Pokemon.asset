@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fainted Pokemon
   m_EditorClassIdentifier: 
   name: Fainted Pokemon
-  description: Someone needs a revive in Home Town
+  description: Someone needs a revive in Town 2
   startDialogue:
     lines:
     - My Pokemon has fainted...

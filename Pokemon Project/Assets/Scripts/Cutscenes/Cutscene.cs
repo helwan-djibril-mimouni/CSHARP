@@ -16,21 +16,26 @@ public class Cutscene : MonoBehaviour, IPlayerTriggerable
 
     public IEnumerator Play()
     {
-        GameController.Instance.StateMachine.Push(CutsceneState.i);
+        yield return new WaitForSeconds(0.1f);
 
-        foreach (var action in actions)
+        if (GameController.Instance.StateMachine.CurrentState != DialogueState.i)
         {
-            if (action.WaitForCompletion)
-            {
-                yield return action.Play();
-            }
-            else
-            {
-                StartCoroutine(action.Play());
-            }
-        }
+            GameController.Instance.StateMachine.Push(CutsceneState.i);
 
-        GameController.Instance.StateMachine.Pop();
+            foreach (var action in actions)
+            {
+                if (action.WaitForCompletion)
+                {
+                    yield return action.Play();
+                }
+                else
+                {
+                    StartCoroutine(action.Play());
+                }
+            }
+
+            GameController.Instance.StateMachine.Pop();
+        }
     }
 
     public void AddAction(CutsceneAction action)

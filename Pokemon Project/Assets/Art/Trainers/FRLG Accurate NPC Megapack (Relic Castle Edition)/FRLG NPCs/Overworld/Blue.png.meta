@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: be07c5ba8e32cca4c95ddf47d3b25f15
+guid: 0e9f413284fd88e4190f107bf0a61e37
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trainer_TAMER_0
+      name: Blue_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 144
-        width: 32
-        height: 48
+        x: 2
+        y: 1
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 797f7344a85bac24b8f20ea937c0725a
-      internalID: 871453853
+      spriteID: 514e483c8540f844da4cb4e17d4b2e31
+      internalID: -1994286865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trainer_TAMER_1
+      name: Blue_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 144
-        width: 32
-        height: 48
+        x: 19
+        y: 1
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdea4d5aaf6785a4ea7871f2c752bb2f
-      internalID: -1285560573
+      spriteID: 95a29ab7a99a3d74aa8f3d228501cc6a
+      internalID: 394316605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trainer_TAMER_2
+      name: Blue_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 144
-        width: 32
-        height: 48
+        x: 36
+        y: 1
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea2e2d53bfd8df24b9f5c705e7613c2c
-      internalID: -420732588
+      spriteID: 7aec2d79413901c48b8c7738e6e5c1a5
+      internalID: 1083957425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trainer_TAMER_3
+      name: Blue_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 144
-        width: 32
-        height: 48
+        x: 53
+        y: 1
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ece1c2cb3e60da74f8dafc8983816309
-      internalID: -2086869954
+      spriteID: 3d50af2c2531199479e84aedca0d6a49
+      internalID: 1558352914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trainer_TAMER_4
+      name: Blue_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 48
+        x: 70
+        y: 1
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f0b61b8ae76d2c4bb6817aba2a3ccf0
-      internalID: -541494119
+      spriteID: aa266b03428c69047a1a2995896a7624
+      internalID: -452811443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trainer_TAMER_5
+      name: Blue_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 48
+        x: 87
+        y: 1
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b4dc543dc5e11745bc76b0b1300e09c
-      internalID: -1179022800
+      spriteID: f99b4d3478e7d574f96ffc8893d61566
+      internalID: -268303514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trainer_TAMER_6
+      name: Blue_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 48
+        x: 104
+        y: 1
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9413597fde06ffc478fcc2d514ece30c
-      internalID: 1328176562
+      spriteID: 44c98ec57251c204584da6b66055f57a
+      internalID: -1823406964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trainer_TAMER_7
+      name: Blue_7
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 48
+        x: 121
+        y: 1
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3da421e7e2eb3674e9bf707062be9a8e
-      internalID: -1206983623
+      spriteID: b383393f72aea1246a15aa6fe74a36b3
+      internalID: 320905272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trainer_TAMER_8
+      name: Blue_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
-        width: 32
-        height: 48
+        x: 138
+        y: 1
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77f1ca3d60024dc43bc7d2708b050421
-      internalID: 2111441386
+      spriteID: a48834496e2a1ad46b16f8ea6aada53f
+      internalID: -1295730852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trainer_TAMER_9
+      name: Blue_9
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
-        width: 32
-        height: 48
+        x: 155
+        y: 1
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,20 +308,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45902b2b8e7e60946934c29c722ee585
-      internalID: -239606779
+      spriteID: cde1f5a92440ec742a7d7eb2bb1d680d
+      internalID: 1201808159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trainer_TAMER_10
+      name: Blue_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
-        width: 32
-        height: 48
+        x: 172
+        y: 1
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,20 +329,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1868868e313b194c9663a6615ffc30e
-      internalID: -159444864
+      spriteID: 0330580b5650b444a8ba81236e61f939
+      internalID: -288482759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trainer_TAMER_11
+      name: Blue_11
       rect:
         serializedVersion: 2
-        x: 96
-        y: 48
-        width: 32
-        height: 48
+        x: 189
+        y: 1
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,92 +350,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71fe674d78aec4c4698ae44509641b59
-      internalID: -428586702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trainer_TAMER_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed20a432afa218944ab36abad1d809da
-      internalID: -1736256747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trainer_TAMER_13
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1ab7e9024373e647bb4854d896705f5
-      internalID: -1953610113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trainer_TAMER_14
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4cb9678978274b49aafa39eef1c24e3
-      internalID: 1098715477
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trainer_TAMER_15
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56ee299f358afe542bd0ccdbdb239563
-      internalID: 15156773
+      spriteID: 9bf81021422c48241b91df952e1e0228
+      internalID: 402822190
       vertices: []
       indices: 
       edges: []
@@ -451,22 +367,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      trainer_TAMER_2: -420732588
-      trainer_TAMER_6: 1328176562
-      trainer_TAMER_3: -2086869954
-      trainer_TAMER_14: 1098715477
-      trainer_TAMER_5: -1179022800
-      trainer_TAMER_9: -239606779
-      trainer_TAMER_0: 871453853
-      trainer_TAMER_11: -428586702
-      trainer_TAMER_7: -1206983623
-      trainer_TAMER_15: 15156773
-      trainer_TAMER_10: -159444864
-      trainer_TAMER_13: -1953610113
-      trainer_TAMER_1: -1285560573
-      trainer_TAMER_8: 2111441386
-      trainer_TAMER_12: -1736256747
-      trainer_TAMER_4: -541494119
+      Blue_0: -1994286865
+      Blue_5: -268303514
+      Blue_3: 1558352914
+      Blue_11: 402822190
+      Blue_6: -1823406964
+      Blue_1: 394316605
+      Blue_10: -288482759
+      Blue_8: -1295730852
+      Blue_7: 320905272
+      Blue_2: 1083957425
+      Blue_4: -452811443
+      Blue_9: 1201808159
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

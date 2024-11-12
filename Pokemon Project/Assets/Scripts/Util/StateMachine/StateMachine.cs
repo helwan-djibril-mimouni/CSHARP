@@ -59,7 +59,11 @@ namespace GDEUtils.StateMachine
 
         public State<T> GetPrevState()
         {
-            return StateStack.ElementAt(1);
+            if (StateStack.Count > 1)
+            {
+                return StateStack.ElementAt(1);
+            }
+            return null;
         }
     }
 }
