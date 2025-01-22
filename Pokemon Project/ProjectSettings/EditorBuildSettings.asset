@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Viridian Gym.unity
     guid: 842c11af79b1d894c9d775b053d3318d
+  - enabled: 1
+    path: Assets/Scenes/Route2.unity
+    guid: 9a59b7c006a9a084aa4d63402e8cfefe
   m_configObjects: {}

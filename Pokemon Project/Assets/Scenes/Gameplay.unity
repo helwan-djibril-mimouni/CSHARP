@@ -7433,7 +7433,7 @@ MonoBehaviour:
   - pokemon: {fileID: 11400000, guid: abda7a473ea05954693fff31cd34f461, type: 2}
     levelRange: {x: 2, y: 5}
     chancePercentage: 50
-  - pokemon: {fileID: 11400000, guid: dfe519bc72fb3c344ab697f501a1c0e9, type: 2}
+  - pokemon: {fileID: 11400000, guid: 6aa7f91a6a1544d4bb923296567756af, type: 2}
     levelRange: {x: 2, y: 4}
     chancePercentage: 50
   wildPokemonsInWater: []

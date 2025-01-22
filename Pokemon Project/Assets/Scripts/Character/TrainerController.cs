@@ -40,48 +40,82 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
     {
         character.LookTowards(initiator.position);
 
-        if (questToComplete != null)
-        {
-            var quest = new Quest(questToComplete);
-            yield return quest.CompleteQuest(initiator);
-            questToComplete = null;
-
-            UnityEngine.Debug.Log($"{quest.Base.Name} : completed");
-        }
-        else if (questToStart != null)
-        {
-            activeQuest = new Quest(questToStart);
-            yield return activeQuest.StartQuest();
-            questToStart = null;
-
-            if (activeQuest.CanBeCompleted())
-            {
-                yield return activeQuest.CompleteQuest(initiator);
-                activeQuest = null;
-            }
-        }
-        else if (activeQuest != null)
-        {
-            if (activeQuest.CanBeCompleted())
-            {
-                yield return activeQuest.CompleteQuest(initiator);
-                activeQuest = null;
-            }
-            else
-            {
-                yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue);
-            }
-        }
-
         if (!battleLost)
         {
             AudioManager.i.PlayMusic(trainerAppearsClip);
 
             yield return DialogManager.Instance.ShowDialog(dialog);
+
+            if (questToComplete != null)
+            {
+                var quest = new Quest(questToComplete);
+                yield return quest.CompleteQuest(initiator);
+                questToComplete = null;
+
+                UnityEngine.Debug.Log($"{quest.Base.Name} : completed");
+            }
+            else if (questToStart != null)
+            {
+                activeQuest = new Quest(questToStart);
+                yield return activeQuest.StartQuest();
+                questToStart = null;
+
+                if (activeQuest.CanBeCompleted())
+                {
+                    yield return activeQuest.CompleteQuest(initiator);
+                    activeQuest = null;
+                }
+            }
+            else if (activeQuest != null)
+            {
+                if (activeQuest.CanBeCompleted())
+                {
+                    yield return activeQuest.CompleteQuest(initiator);
+                    activeQuest = null;
+                }
+                else
+                {
+                    yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue);
+                }
+            }
+
             GameController.Instance.StartTrainerBattle(this);
         }
         else
         {
+            if (questToComplete != null)
+            {
+                var quest = new Quest(questToComplete);
+                yield return quest.CompleteQuest(initiator);
+                questToComplete = null;
+
+                UnityEngine.Debug.Log($"{quest.Base.Name} : completed");
+            }
+            else if (questToStart != null)
+            {
+                activeQuest = new Quest(questToStart);
+                yield return activeQuest.StartQuest();
+                questToStart = null;
+
+                if (activeQuest.CanBeCompleted())
+                {
+                    yield return activeQuest.CompleteQuest(initiator);
+                    activeQuest = null;
+                }
+            }
+            else if (activeQuest != null)
+            {
+                if (activeQuest.CanBeCompleted())
+                {
+                    yield return activeQuest.CompleteQuest(initiator);
+                    activeQuest = null;
+                }
+                else
+                {
+                    yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue);
+                }
+            }
+
             yield return DialogManager.Instance.ShowDialog(dialogAfterBattle);
         }
     }

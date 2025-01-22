@@ -10534,6 +10534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FaintedPokemonQuestObject
       objectReference: {fileID: 0}
+    - target: {fileID: 9020795528653740851, guid: 7dbb0b9d95d79024e84afbe8aa10f21e, type: 3}
+      propertyPath: uniqueId
+      value: 241067ff-a028-4ced-864a-ea34cfd1ead7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbb0b9d95d79024e84afbe8aa10f21e, type: 3}
 --- !u!1001 &6499937349285703011
@@ -10683,6 +10687,10 @@ PrefabInstance:
     - target: {fileID: 7434794940876612479, guid: 7dbb0b9d95d79024e84afbe8aa10f21e, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020795528653740851, guid: 7dbb0b9d95d79024e84afbe8aa10f21e, type: 3}
+      propertyPath: uniqueId
+      value: 5963e4dd-c030-4e19-b441-6658db1c30c6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbb0b9d95d79024e84afbe8aa10f21e, type: 3}

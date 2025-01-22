@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6459d84aeb3aab24c87dd77ebbf0146f, type: 3}
+  m_Name: Route 22 Blocked
+  m_EditorClassIdentifier: 
+  name: Route 22 Blocked
+  description: Someone is blocking the Gym, how will you let him enter ?
+  startDialogue:
+    lines:
+    - I can't let you use that route.
+    - Team Rocket is doing some bad stuff over there.
+  inProgressDialogue:
+    lines:
+    - I reaaly can't let you use that route.
+    - You'd need all the gym leaders combined to handle them.
+  completedDialogue:
+    lines:
+    - I can't let you use that route.
+    - What ? You got a letter from every gym leader ?
+    - ...
+    - You're the past champion ?
+    - You might actually be able to defeat them all..
+    - Go, champion ! Save this region !
+  requiredItem:
+  - {fileID: 11400000, guid: 26f0b5d0e5b624b4cb47e12bc01a4621, type: 2}
+  - {fileID: 11400000, guid: bd277acdd66537b45a8b751cd37492bd, type: 2}
+  - {fileID: 11400000, guid: 7931434b5372c204db124b281fb92686, type: 2}
+  - {fileID: 11400000, guid: 4f12dcb6b22bb8d409c6a89e4c00a6fc, type: 2}
+  - {fileID: 11400000, guid: 063adedfad0ee8746954aad0e006ad54, type: 2}
+  - {fileID: 11400000, guid: 99a5b8cfa5a6cef43b87b2724cfa053b, type: 2}
+  - {fileID: 11400000, guid: 47d8ed2d1b58cdc46a38d11e3603f227, type: 2}
+  - {fileID: 11400000, guid: 602dd5aacedfd4d4eb7ec30db2d45eb6, type: 2}
+  removeItem: 0
+  rewardItem: {fileID: 0}

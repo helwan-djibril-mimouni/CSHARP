@@ -9055,7 +9055,7 @@ PrefabInstance:
     - target: {fileID: 1165709834834521970, guid: 73c802c1b796141429c50884acb7baff, type: 3}
       propertyPath: pokemons.Array.data[5].pokemonBase
       value: 
-      objectReference: {fileID: 11400000, guid: 564288ee90ca7814d9e460a2e47d5f6b, type: 2}
+      objectReference: {fileID: 11400000, guid: 3486749e55d354d4082f22111711c3b1, type: 2}
     - target: {fileID: 1165709834834521979, guid: 73c802c1b796141429c50884acb7baff, type: 3}
       propertyPath: m_Name
       value: Player

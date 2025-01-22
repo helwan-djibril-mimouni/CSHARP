@@ -4561,6 +4561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
+  - rid: 6498144994580758532
   - rid: 8002637269413658684
   - rid: 8002637269413658693
   triggerRepeatedly: 0
@@ -4568,6 +4569,16 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 6498144994580758532
+      type: {class: MoveActorAction, ns: , asm: Assembly-CSharp}
+      data:
+        name: MoveActorAction
+        waitForCompletion: 1
+        actor:
+          isPlayer: 0
+          character: {fileID: 1416616815}
+        movePatterns:
+        - {x: 0, y: -10}
     - rid: 8002637269413658684
       type: {class: NPCInteractAction, ns: , asm: Assembly-CSharp}
       data:
