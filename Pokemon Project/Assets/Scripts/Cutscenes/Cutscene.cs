@@ -16,8 +16,6 @@ public class Cutscene : MonoBehaviour, IPlayerTriggerable
 
     public IEnumerator Play()
     {
-        //yield return new WaitForSeconds(0.0000000001f);
-
         if (GameController.Instance.StateMachine.CurrentState != DialogueState.i && GameController.Instance.StateMachine.CurrentState != CutsceneState.i)
         {
             GameController.Instance.StateMachine.Push(CutsceneState.i);

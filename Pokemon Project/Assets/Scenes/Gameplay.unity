@@ -444,7 +444,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 6cffb14cafdb9d543ac8caa32d65725d, type: 3}
     - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: connectedScenes.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: connectedScenes.Array.data[0]
@@ -454,6 +454,10 @@ PrefabInstance:
       propertyPath: connectedScenes.Array.data[1]
       value: 
       objectReference: {fileID: 1588940826}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.data[2]
+      value: 
+      objectReference: {fileID: 2051238052}
     - target: {fileID: 375174130752643438, guid: c65d344a808312742847fffd9f9ca946, type: 3}
       propertyPath: m_Name
       value: Viridian City
@@ -7489,6 +7493,137 @@ MonoBehaviour:
   wildPokemonsInWater: []
   totalChance: 100
   totalChanceWater: 0
+--- !u!1001 &2051238049
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Size.x
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Size.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Offset.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643436, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Offset.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: sceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: f2baa78ccffdc6c4797741f822c45df0, type: 3}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.data[0]
+      value: 
+      objectReference: {fileID: 549007819}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.data[1]
+      value: 
+      objectReference: {fileID: 549007819}
+    - target: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: connectedScenes.Array.data[2]
+      value: 
+      objectReference: {fileID: 549007819}
+    - target: {fileID: 375174130752643438, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_Name
+      value: Route2
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375174130752643439, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+--- !u!1 &2051238050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 375174130752643438, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+  m_PrefabInstance: {fileID: 2051238049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2051238051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051238050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80706fc96485d6643916eb84e990478e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wildPokemons:
+  - pokemon: {fileID: 11400000, guid: abda7a473ea05954693fff31cd34f461, type: 2}
+    levelRange: {x: 2, y: 5}
+    chancePercentage: 50
+  - pokemon: {fileID: 11400000, guid: 6aa7f91a6a1544d4bb923296567756af, type: 2}
+    levelRange: {x: 2, y: 4}
+    chancePercentage: 50
+  wildPokemonsInWater: []
+  totalChance: 100
+  totalChanceWater: 0
+--- !u!114 &2051238052 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 375174130752643437, guid: c65d344a808312742847fffd9f9ca946, type: 3}
+  m_PrefabInstance: {fileID: 2051238049}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051238050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b2c0f85d1130d478e206d999cff20e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2089841181
 PrefabInstance:
   m_ObjectHideFlags: 0

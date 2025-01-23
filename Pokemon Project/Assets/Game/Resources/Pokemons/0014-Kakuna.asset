@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdd6dc8d697c4142a75d28b6cab876a, type: 3}
+  m_Name: 0014-Kakuna
+  m_EditorClassIdentifier: 
+  name: Kakuna
+  description: 
+  frontSprite: {fileID: 21300000, guid: 2b6c6ee6495b0a74280bfb1b90a341ca, type: 3}
+  backSprite: {fileID: 21300000, guid: 45ec113bdf0dfa64e9053c3fdb03043b, type: 3}
+  shinyFrontSprite: {fileID: 21300000, guid: f07e38fd30a4523468d89e6eab8878a7, type: 3}
+  shinyBackSprite: {fileID: 21300000, guid: 9e1edd698d218ca4ea9d1903b9d342e4, type: 3}
+  type1: 12
+  type2: 8
+  maxHP: 45
+  attack: 25
+  defense: 50
+  spAttack: 25
+  spDefense: 25
+  speed: 35
+  expYield: 71
+  growthRate: 2
+  catchRate: 120
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: c15789f244569a34ba26ca0ffed87913, type: 2}
+    level: 1
+  learnableByItems: []
+  evolutions:
+  - evolvesInto: {fileID: 11400000, guid: 0fb9f5f66e88e1949bc8924f8a3552bc, type: 2}
+    requiredLevel: 10
+    requiredItem: {fileID: 0}
